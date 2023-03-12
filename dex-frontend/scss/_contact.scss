@@ -1,0 +1,41 @@
+// 
+// contact.scss
+// 
+
+.contact{
+    .info-box{
+        background-color: $white;
+        border-radius: 20px;
+        padding: 20px;
+
+        .form-control , .form-select{
+            border-radius: 15px !important;
+            padding: 18px ;
+            &:focus{
+                border: 1px solid $primary !important;
+                box-shadow: none !important;
+            }
+        } 
+    }
+     
+    @media (max-width: 1500px) {
+        .request-image{
+            img{
+                display: none !important;
+            }
+        }
+    }
+    
+}
+
+  
+
+
+body[data-layout-mode="dark"] {
+    .contact{
+        background-color: $body-dark-bg !important;
+        .info-box{
+            background-color: $gray-dark-100 !important;
+        }
+    }
+}

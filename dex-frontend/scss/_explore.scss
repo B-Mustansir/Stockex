@@ -1,0 +1,124 @@
+// 
+// explore.scss
+// 
+
+.explore {
+
+    .nav-tabs {
+        border-bottom: none;
+
+        .nav-link {
+            background: 0 0;
+            border: none;
+            border-radius: 10px;
+            height: 80px;
+            border: 2px solid rgba($muted, 0.2);
+            font-weight: 600;
+            color: $muted;
+            margin: 0 10px;
+
+            &:hover {
+                border-color: $primary;
+                isolation: isolate;
+
+                .icon {
+                    color: $primary !important;
+                }
+            }
+
+            &.active {
+                .icon {
+                    &:after {
+                        transform: rotate(135deg) !important;
+                        display: block;
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid $primary;
+                        position: absolute;
+                        border-left: 0;
+                        border-bottom: 0;
+                        bottom: -12px;
+                        left: 45%;
+                        margin-top: -10px;
+                        background: $light;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: $muted;
+        background-color: transparent;
+        border: none;
+        height: 80px;
+        text-align: center;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border: 2px solid $primary;
+        color: $primary !important;
+    }
+
+    @media (max-width:992px) {
+        .nav-tabs .nav-link {
+           margin: 0 0 20px 0 !important;
+        }
+
+         .nav-tabs .nav-link.active .icon:after {
+            left: 48% !important;
+        }
+    }
+
+
+    .tab-content {
+        .tab-content {
+            background-color: $white;
+            border-radius: 10px;
+
+            .card-image {
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .body-content {
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+body[data-layout-mode='dark'] {
+    .explore {
+        background-color: $gray-dark-200 !important;
+
+        .nav-tabs {
+            .nav-link {
+                &.active {
+                    .icon {
+                        &:after {
+                            content: '';
+
+                            background: $gray-dark-200;
+                            left: 45%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-content {
+                background-color: $body-dark-bg !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,480 @@
+// 
+// blog.scss
+// 
+
+.slider-blog {
+    .blog-box {
+        background-color: $light;
+        padding: 20px;
+        border-radius: 10px;
+
+        .plus-icon {
+            line-height: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            color: $white;
+        }
+    }
+}
+
+
+.swiper-button-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    left: 90%;
+    top: 15%;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 2px solid rgba($muted, 0.5);
+    background-image: url(../images/right-arrows.png);
+}
+
+.swiper-button-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    left: 85%;
+    top: 15%;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 2px solid rgba($muted, 0.5);
+    background-image: url(../images/left-arrow.png);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: all 0.5s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 2px solid $muted;
+    }
+}
+
+
+
+.blog {
+    .card {
+        .blog-image {
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .card-body {
+            .blog-footer {
+                border: 1px solid rgba($muted, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .slider-blog {
+        .swiper-button-prev {
+            left: 75%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 6% !important;
+        }
+    }
+}
+
+
+
+
+// ********** index-2  blog **************
+
+.blog-2 {
+    .collection-items {
+        .blog-box {
+            .collection-image {
+                padding: 20px;
+                background-color: $light;
+                border-radius: 20px;
+
+                .blog-image {
+                    border-radius: 20px;
+                    overflow: hidden;
+
+                    .top-image {
+                        img {
+                            width: 31%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            .collection-content {
+                padding: 0 20px;
+
+                .collection-title {
+                    a {
+                        color: $dark;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .collection-like-icon {
+                    p {
+                        color: rgba($muted, 0.7);
+
+                        a {
+                            color: rgba($muted, 0.7);
+                            position: absolute;
+                            right: 80px;
+                            transition: all 0.5s;
+
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .collection-like-icon {
+                a {
+                    font-size: 18px;
+                    color: $danger !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// ***********  index-3  blog ***********
+
+
+.blog-3 {
+    font-family: $font-family-secondary !important;
+
+    .blog-box {
+        border-radius: 10px;
+        border: none;
+        box-shadow: $box-shadow-lg;
+
+        .blog-image {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .blog-body {
+            .text-content {
+                p {
+                    font-family: $font-family-third !important;
+                }
+            }
+
+            .blog-like-button {
+                button {
+                    padding: 5px 18px;
+                    border-radius: 5px;
+                    color: $dark;
+                    background-color: rgba($muted, 0.2);
+                    border-color: rgba($muted, 0.2);
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: rgba($secondary, 0.5);
+                        border-color: rgba($secondary, 0.5);
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ***********  index-4  blog ***********
+
+
+.blog-4 {
+    background-color: $white;
+
+    .tab-content {
+        background-color: $light;
+        border-radius: 10px;
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+
+        .card-image {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                border-radius: 10px;
+                transition: all .4s cubic-bezier(.4, 0, .2, 1);
+            }
+        }
+
+        .body-content {
+            p {
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            .card-image {
+                overflow: hidden;
+
+                img {
+                    transform: scale(1.2);
+                    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: $box-shadow-lg;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+// ***********  inner page - blog ***********
+
+
+
+.inner-blog {
+    .breadcrumb {
+        box-shadow: $box-shadow;
+        width: fit-content;
+        background-color: $white;
+        padding: 16px 20px;
+        border-radius: 60px;
+    }
+
+    .blog-item {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 20px;
+
+        .blog-image {
+            img {
+                overflow: hidden;
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .blog-side-box {
+        .items {
+            background-color: $white;
+            padding: 20px;
+            border-radius: 20px;
+
+            .title-bottom-border {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 20%;
+                    background-color: $black;
+                    top: -1px;
+                }
+            }
+
+            .avatar-sm {
+                line-height: 2rem;
+                border-radius: 10px;
+            }
+
+            .tag-box {
+                .badge {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    background-color: rgba($purple, 0.3);
+                    color: $dark;
+                    padding: 8px 12px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+body[data-layout-mode='dark'] {
+
+
+    .slider-blog {
+        background-color: $body-dark-bg !important;
+
+        .blog-box {
+            color: $dark !important;
+        }
+    }
+
+    .slider-content-image {
+        .avatar-sm {
+            img {
+                border: 4px solid $body-dark-bg !important;
+            }
+        }
+
+        .top-child {
+            .content-image-check {
+                border: 3px solid $body-dark-bg !important;
+            }
+        }
+    }
+
+    .blog {
+        background-color: $body-dark-bg-light !important;
+
+        .card {
+            background-color: $body-dark-bg-light !important;
+            .card-body{
+                h6{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+
+
+    // ********** index-2  blog **************
+
+
+    .blog-2 {
+        background-color: $body-dark-bg;
+        color: $white;
+
+        .collection-image {
+            background-color: $gray-dark-200 !important;
+        }
+
+        .collection-content {
+            .collection-title {
+                a {
+                    color: $white !important;
+                }
+            }
+
+        }
+
+        span,
+        h6 {
+            color: rgba(255, 255, 255, .3) !important;
+        }
+    }
+
+
+
+    // ***********  index-3  blog ***********
+
+
+    .blog-3 {
+        background-color: $gray-dark-100 !important;
+
+        .blog-box {
+            background-color: $body-dark-bg;
+        }
+
+        .blog-like-button {
+            button {
+                padding: 5px 18px;
+                border-radius: 5px;
+                color: $white !important;
+                background-color: $secondary;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: rgba($secondary, 0.2);
+                    border-color: rgba($secondary, 0.2) !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+
+    // ***********  index-4  blog ***********
+
+    .blog-4 {
+        background-color: $body-dark-bg !important;
+
+        .tab-content {
+            background-color: $gray-dark-100 !important;
+
+            .badge {
+                color: $dark !important;
+            }
+        }
+    }
+
+    .cta {
+        background-color: $gray-dark-100 !important;
+    }
+
+    // ***********  inner page - blog ***********
+
+    .inner-blog {
+        background-color: $body-dark-bg !important;
+
+        .blog-item {
+            background-color: $gray-dark-100 !important;
+            span {
+                color: $muted !important;
+            }
+
+            h6{
+                color: $white;
+            }
+        }
+
+        .items{
+            background-color: $gray-dark-100 !important;
+            ::placeholder{
+                color: rgba($white, 0.4);
+            }
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        border: 2px solid rgba($white, 0.5) !important;
+        color: rgba($white, 0.5) !important;
+    }
+}

@@ -1,0 +1,48 @@
+// 
+// wallet.scss
+// 
+
+.wallet{
+    .wallet-box{
+        background-color: $white;
+        border: 1px solid rgba($muted, 0.1);
+        padding: 20px;
+        border-radius: 20px;
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+
+       &:hover{
+        transform: translateY(-5%);
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        border: 1px solid rgba($blue, 0.2);
+       }
+    } 
+}
+
+
+
+.Privacy{
+    .breadcrumb{
+        box-shadow: $box-shadow;
+        width: fit-content;
+        background-color: $white;
+        padding: 16px 20px;
+        border-radius: 60px;
+    }   
+
+    .privacy-box{
+        background-color: $white;
+        padding: 30px;
+        border-radius: 20px;
+    }
+}
+
+
+
+body[data-layout-mode='dark'] {
+    .wallet{
+        background-color: $body-dark-bg !important;
+        .wallet-box{
+            background-color: $gray-dark-100;
+        }
+    }
+}

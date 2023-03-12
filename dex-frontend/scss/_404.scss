@@ -1,0 +1,83 @@
+// 
+// 404.scss
+// 
+
+
+.not-found {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    .dangers-image {
+        animation: rotation 5s infinite ease-in-out;
+        position: absolute;
+        left: 30%;
+        top: 5%;
+    }
+
+    .error-text {
+        p {
+            font-size: 18rem;
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+   
+    0% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .not-found {
+        .dangers-image{
+            width: 240px;
+            height: 240px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .not-found {
+        .dangers-image{
+            left: 32%;
+            top: 8%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .not-found {
+        .dangers-image{
+            width: 180px;
+            height: 180px;
+            left: 32%;
+            top: 6%;
+        }
+    }
+}
+
+
+
+
+body[data-layout-mode='dark'] {
+
+    .not-found{
+        background-color: $body-dark-bg !important;
+    }
+}

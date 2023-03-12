@@ -1,0 +1,45 @@
+// 
+// top-seller
+// 
+
+.top-seller{
+    .seller-box{
+        background-color: $white;
+        box-shadow: $box-shadow-lg;
+        padding: 30px;
+        border-radius: 10px;
+
+        .avatar-md{
+            box-shadow: 0 0rem 10px rgba(5, 3, 0, 0.6)!important;
+        }
+
+        .number {
+            position: absolute;
+            height: 22px;
+            width: 22px;
+            outline: 3px solid $white;
+            top: 50%;
+            transform: translatey(-50%);
+            background-color: $muted;
+           
+            h6{
+                line-height: 22px;
+                color: $white !important;
+            }
+        }
+    }
+}
+
+
+body[data-layout-mode='dark'] {
+    .top-seller{
+        background-color: $body-dark-bg !important;
+        .seller-box{
+            background-color: $gray-dark-100 !important;
+
+            .number{
+                outline: 3px solid $body-dark-bg;
+            }
+        }
+    }
+}
