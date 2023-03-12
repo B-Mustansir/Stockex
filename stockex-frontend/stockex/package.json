@@ -1,0 +1,19 @@
+{
+  "name": "codeefly",
+  "version": "1.0.0",
+  "description": "Bootstrap 5 Admin Dashboard",
+  "scripts": {
+    "start": "live-server",
+    "sass": "node-sass --watch ./scss/style.scss ./css/style.css --source-map ./css/style.css.map"
+  },
+  "author": "codeefly",
+  "design": "codeefly",
+  "authorTfUrl": "https://themeforest.net/user/codeefly",
+  "authorUrl": "https://codeefly.io",
+  "license": "ISC",
+  "email": "sabujhasansarker@gmail.com",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

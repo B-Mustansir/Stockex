@@ -1,0 +1,56 @@
+
+
+.intro-form {
+    position          : relative;
+    //   margin-bottom: 50px;
+    max-width         : 450px;
+    // margin            : 0 auto 0px;
+
+    form {
+        display: flex;
+    }
+
+    button {
+        position                  : relative;
+        background                : $primary;
+        border-radius   : 0.25rem;
+        // border-bottom-right-radius: 0.25rem;
+        padding                   : 7px 20px;
+        color                     : $white;
+        font-size                 : 24px;
+        overflow                  : hidden;
+        width                     : 60px;
+        min-width                 : 60px;
+        border                    : 0px;
+        margin-left               : 15px;
+
+        .first {
+            position  : absolute;
+            right     : 17px;
+            top       : 12px;
+            z-index   : 1;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .second {
+            position  : absolute;
+            left      : -22px;
+            top       : 12px;
+            z-index   : 1;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+
+            .first {
+                right: -22px;
+            }
+
+            .second {
+                left: 20px;
+            }
+        }
+    }
+}

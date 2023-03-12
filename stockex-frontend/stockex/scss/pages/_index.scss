@@ -1,0 +1,219 @@
+// .getstart {
+//     // background: #FAFCFE;
+// }
+
+.getstart-content {
+    text-align      : left;
+    // border       : 1px solid $border-color;
+    // box-shadow   : $shadow;
+    padding         : 30px 30px;
+    border-radius   : $radius;
+    margin          : 20px 0px;
+    background      : #fff;
+
+    i {
+        font-size: 36px;
+        color    : $purple;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size : 18px;
+    }
+
+    a {
+        color: $purple;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.portfolio_list {
+
+    // max-width: 500px;
+    .media {
+        margin     : 50px 0px;
+        display    : flex;
+        align-items: flex-start;
+
+        h4 {
+            font-size: 22px;
+            color    : $headings-color;
+        }
+
+        .port-icon {
+            background              : $white;
+            // padding              : 10px;
+            // height         : 65px;
+            // width          : 65px;
+            // box-shadow        : rgba(218, 225, 233, 0.557) 0px 8px 16px;
+            border-radius           : 50%;
+            // border      : 1px solid $border-color;
+            display                 : flex;
+            justify-content         : flex-start;
+            align-items             : flex-start;
+            font-size               : 32px;
+            margin-right            : 20px;
+            color                   : $primary;
+
+            i {
+                line-height: 0;
+            }
+        }
+
+        p {
+            margin-bottom: 0px;
+            color        : $body-color;
+            opacity      : 0.85;
+
+            a {
+                color      : $white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.portfolio_img {
+    margin: 20px 0px;
+
+    img {
+        border-radius: 5px;
+        box-shadow   : 25px 60px 125px -25px rgba(80, 102, 144, .1), 16px 40px 75px -40px rgba(0, 0, 0, .2);
+    }
+}
+
+
+// Trade app
+.trade-app-content {
+    // border    : 0px;
+    box-shadow   : none;
+    // border    : 1px solid $border-color;
+
+    .card-body {
+        padding   : 30px;
+        text-align: left;
+
+        span {
+            font-size       : 36px;
+            margin-bottom   : 30px;
+            display         : inline-block;
+            color           : $purple;
+            // box-shadow   : 0 0 1.25rem rgba(31, 45, 61, 0.08) !important;
+            line-height     : 0;
+            padding         : 10px;
+            border-radius   : 100px;
+        }
+
+        h4 {
+            font-size    : 20px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            min-height: 115px;
+
+            @include respond('tab-land') {
+                min-height: 165px;
+            }
+
+            @include respond('tab-port') {
+                min-height: auto;
+            }
+        }
+
+        a {
+            color        : $purple;
+            display      : inline-block;
+            text-align   : center;
+            border-bottom: 2px solid $purple;
+
+            i {
+                margin-left: 10px;
+                font-size  : 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+// Promo
+.promo {
+    background-color: #fff;
+    border-bottom   : 1px solid $border-color;
+
+    .promo-content {
+        text-align: left;
+        margin    : 50px 30px;
+
+        i {
+            font-size: 36px;
+            color    : $purple;
+        }
+
+        h3 {
+            margin-top   : 20px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 30px;
+        }
+
+
+        a {
+            color: $purple;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+.get-touch {
+    border-bottom: 1px solid $border-color;
+}
+
+.get-touch-content {
+    // text-align: center;
+    padding         : 30px;
+    margin-bottom   : 30px;
+    // box-shadow   : 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+    background      : #fff;
+    border-radius   : 5px;
+
+    span {
+        margin-right: 15px;
+
+        i {
+            color    : $purple;
+            font-size: 42px;
+        }
+    }
+
+    h4 {
+        font-size    : 20px;
+        margin-top   : 30px;
+        margin-bottom: 10px;
+        text-overflow: ellipsis;
+        overflow     : hidden;
+        white-space  : nowrap;
+    }
+
+    p {
+        line-height: 27px;
+    }
+}
+
+.trusted-logo {
+    img {
+        width: 100px;
+    }
+}
