@@ -3,14 +3,122 @@ const request = require('request');
 const crypto = require('crypto');
 const axios = require('axios');
 const finnhub = require('finnhub');
+const moment = require('moment');
 
 const api_key = finnhub.ApiClient.instance.authentications['api_key'];
-api_key.apiKey = 'cgbb04pr01ql0m8rmongcgbb04pr01ql0m8rmoo0';
+api_key.apiKey = process.env.finnhubKey;
 const finnhubClient = new finnhub.DefaultApi();
 
-const apiKey = 'YqVt3xq7';
+const apiKey = process.env.angelKey;
 
-fastify.get('/:symbol', async (request, reply) => {
+async function getQuote(symbol) {
+  return new Promise((resolve, reject) => {
+    finnhubClient.quote(symbol, (error, data) => {
+      if (error) {
+        reject(error);
+      } else {
+        console.log(data); // Add this line
+        resolve(data);
+      }
+    });
+  });
+}
+
+fastify.get('/stock/hist/:symbol', async (request, reply) => {
+  const symbol = request.params.symbol;
+
+  try {
+    // Retrieve historical data from Yahoo Finance
+    const yahooData = await axios.get(
+      `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`,
+      {
+        params: {
+          range: 'max',
+          includePrePost: false,
+          interval: '1d',
+          region: 'US',
+          lang: 'en-US',
+          includeAdjustedClose: true,
+        },
+      }
+    );
+    const yahooTimeSeriesData = yahooData.data.chart.result[0].indicators.adjclose[0].adjclose;
+
+    // Retrieve historical data from Alpha Vantage
+    const alphaData = await axios.get('https://www.alphavantage.co/query', {
+      params: {
+        function: 'TIME_SERIES_DAILY_ADJUSTED',
+        symbol: symbol,
+        outputsize: 'full',
+        apikey: process.env.alphaKey,
+      },
+    });
+    const alphaTimeSeriesData = Object.values(alphaData.data['Time Series (Daily)']).map((data) =>
+      parseFloat(data['4. close'])
+    );
+
+    // Retrieve historical data from Finnhub
+    const finnData = await axios.get('https://finnhub.io/api/v1/stock/candle', {
+      params: {
+        symbol: symbol,
+        resolution: 'D',
+        from: moment().subtract(5, 'years').unix(),
+        to: moment().unix(),
+        token: process.env.finnhubKey,
+      },
+    });
+    const finnTimeSeriesData = finnData.data.c;
+
+    // Combine the data arrays and average the values for each data point
+    const combinedData = [];
+    let yahooIndex = 0;
+    let alphaIndex = 0;
+    let finnIndex = 0;
+    while (
+      yahooIndex < yahooTimeSeriesData.length ||
+      alphaIndex < alphaTimeSeriesData.length ||
+      finnIndex < finnTimeSeriesData.length
+    ) {
+      const yahooValue = yahooTimeSeriesData[yahooIndex];
+      const alphaValue = alphaTimeSeriesData[alphaIndex];
+      const finnValue = finnTimeSeriesData[finnIndex];
+      if (yahooValue && alphaValue && finnValue) {
+        combinedData.push((yahooValue + alphaValue + finnValue) / 3);
+        yahooIndex++;
+        alphaIndex++;
+        finnIndex++;
+      } else if (yahooValue && alphaValue) {
+        combinedData.push((yahooValue + alphaValue) / 2);
+        yahooIndex++;
+        alphaIndex++;
+      } else if (yahooValue && finnValue) {
+        combinedData.push((yahooValue + finnValue) / 2);
+        yahooIndex++;
+        finnIndex++;
+      } else if (alphaValue && finnValue) {
+        combinedData.push((alphaValue + finnValue) / 2);
+        alphaIndex++;
+        finnIndex++;
+      } else if (yahooValue) {
+        combinedData.push(yahooValue);
+        yahooIndex++;
+      } else if (alphaValue) {
+        combinedData.push(alphaValue);
+        alphaIndex++;
+      } else if (finnValue) {
+        combinedData.push(finnValue);
+        finnIndex++;
+      }
+    }
+
+    reply.send(combinedData);
+  } catch (error) {
+    console.log(error);
+    reply.status(500).send('Error retrieving stock data');
+  }
+});
+
+fastify.get('/stock/prices/:symbol', async (request, reply) => {
   const symbol = request.params.symbol;
 
   try {
@@ -29,11 +137,26 @@ fastify.get('/:symbol', async (request, reply) => {
     );
     const yahooLivePrice = yahooData.data.chart.result[0].meta.regularMarketPrice;
 
+    const response = await axios.get('https://www.alphavantage.co/query', {
+      params: {
+        function: 'GLOBAL_QUOTE',
+        symbol: symbol,
+        apikey: process.env.alphaKey,
+      },
+    });
+
+    const alphaLiveData = response.data['Global Quote'];
+    if (!alphaLiveData) {
+      throw new Error('Error retrieving Alpha Vantage data');
+    }
+
+    const alphaLivePrice = parseFloat(alphaLiveData['05. price']);
+
     const alphaData = await axios.get('https://www.alphavantage.co/query', {
       params: {
         function: 'TIME_SERIES_DAILY_ADJUSTED',
         symbol: symbol,
-        apikey: '1VN2CUGWAIJ24W28',
+        apikey: process.env.alphaKey,
       },
     });
     const alphaMetaData = alphaData.data['Meta Data'];
@@ -42,23 +165,7 @@ fastify.get('/:symbol', async (request, reply) => {
       throw new Error('Error retrieving Alpha Vantage data');
     }
     const alphaLastRefreshed = alphaMetaData['3. Last Refreshed'];
-    const alphaLivePrice = alphaTimeSeriesData[alphaLastRefreshed]['4. close'];
-
-    const intradayData = await axios.get('https://www.alphavantage.co/query', {
-      params: {
-        function: 'TIME_SERIES_INTRADAY',
-        symbol: symbol,
-        interval: '5min',
-        apikey: '1VN2CUGWAIJ24W28',
-      },
-    });
-    const intradayMetaData = intradayData.data['Meta Data'];
-    const intradayTimeSeriesData = intradayData.data['Time Series (5min)'];
-    if (!intradayMetaData || !intradayTimeSeriesData) {
-      throw new Error('Error retrieving Alpha Vantage intraday data');
-    }
-    const intradayLastRefreshed = intradayMetaData['3. Last Refreshed'];
-    const intradayLivePrice = intradayTimeSeriesData[intradayLastRefreshed]['4. close'];
+    const alphaEodPrice = alphaTimeSeriesData[alphaLastRefreshed]['4. close'];
 
     const endOfDayData = await axios.get(
       `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`,
@@ -78,95 +185,27 @@ fastify.get('/:symbol', async (request, reply) => {
       throw new Error('Error retrieving Yahoo Finance end-of-day data');
     }
 
-    let finnLivePrice;
-    let finnEODPrice;
-
-    // Live prices
-    finnhubClient.quote('AAPL', (error, data, response) => {
-      if (error) {
-        console.error(error);
-      } else {
-        finnLivePrice = data.c;
-        finnEODPrice = data.pc;
-        console.log('Live price:', finnLivePrice);
-        console.log('EOD price:', finnEODPrice);
-      }
-    });
+    const data = await getQuote(symbol);
+    const finnLivePrice = data.c;
+    const finnEodPrice = data.pc;
 
     const endOfDayPrice =
       (endOfDayPriceData[endOfDayPriceData.length - 1] +
-        parseFloat(alphaLastRefreshed) +
-        parseFloat(intradayLastRefreshed) +
-        parseFloat(finnEODPrice)) /
-      4;
+        parseFloat(finnEodPrice) +
+        parseFloat(alphaEodPrice)) /
+      3;
 
     const livePrice =
-      (parseFloat(yahooLivePrice) +
-        parseFloat(alphaLivePrice) +
-        parseFloat(intradayLivePrice) +
-        parseFloat(finnLivePrice)) /
-      4;
+      (parseFloat(yahooLivePrice) + parseFloat(finnLivePrice) + parseFloat(alphaLivePrice)) / 3;
 
-    reply.send({
-      livePrice: livePrice,
-      endOfDayPrice: endOfDayPrice,
-      finnLive: finnLivePrice,
-      finnEod: finnEODPrice,
-    });
+    reply.send({livePrice, endOfDayPrice});
+
+    // Finnhub
   } catch (error) {
     console.log(error);
     reply.status(500).send('Error retrieving stock data');
   }
 });
-
-async function fetchPrices(api, symbol) {
-  try {
-    const {
-      url,
-      params = {},
-      headers = {},
-      livePricePath,
-      endOfDayPricePath,
-      endOfDayParams,
-      transformResponse,
-    } = api;
-
-    // Build the request URL
-    let requestUrl = url;
-    if (livePricePath) {
-      requestUrl += `/${symbol}?fields=${livePricePath}`;
-    } else {
-      Object.keys(params).forEach((key, index) => {
-        requestUrl += `${index === 0 ? '?' : '&'}${key}=${params[key]}`;
-      });
-    }
-
-    // Fetch the live price
-    const livePriceResponse = await axios.get(requestUrl, {headers});
-    const livePriceData = livePriceResponse.data;
-    const livePrice = livePricePath
-      ? eval(`livePriceData.${livePricePath}`)
-      : eval(transformResponse)(livePriceData);
-
-    // Fetch the end-of-day price
-    let endOfDayPrice;
-    if (endOfDayPricePath) {
-      const endOfDayRequestUrl = `${url}/${symbol}/history`;
-      const endOfDayParamsWithSymbol = {...endOfDayParams, symbol};
-      const endOfDayResponse = await axios.get(endOfDayRequestUrl, {
-        headers,
-        params: endOfDayParamsWithSymbol,
-      });
-      const endOfDayData = endOfDayResponse.data;
-      endOfDayPrice = eval(`endOfDayData.${endOfDayPricePath}`);
-    }
-
-    return {api: api.name, livePrice, endOfDayPrice};
-  } catch (error) {
-    console.error(`Error fetching prices from ${api.name}:`, error.message);
-    return {api: api.name, error: error.message};
-  }
-}
 
 // Define the endpoint to place a buy order
 const endpoint = 'https://apiconnect.angelbroking.com/rest/secure/angelbroking/order/v1/placeOrder';
@@ -175,15 +214,6 @@ fastify.post('/buy', async (req, reply) => {
   const orderDetails = req.body;
   let accessToken;
   let debug;
-
-  const url = 'https://apiconnect.angelbroking.com/rest/auth/angelbroking/jwt/v1/generateTokens';
-
-  function generateRefreshToken() {
-    const buffer = crypto.randomBytes(64);
-    return buffer.toString('hex');
-  }
-
-  const refreshToken = generateRefreshToken();
 
   accessToken =
     'eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6Ik01MDY5NDE2MyIsInJvbGVzIjowLCJ1c2VydHlwZSI6IlVTRVIiLCJpYXQiOjE2NzkxMzU1ODEsImV4cCI6MTc2NTUzNTU4MX0.FeHDLd6flQiydHwyu9w4JlZ9kXp0nq8pcI-n3BrrV5Qv0vLjY9jsdlowNWcPoEfd6tt3JxhGdyvcWGhsD-tUTg';
@@ -272,36 +302,6 @@ fastify.post('/sell', async (req, reply) => {
     }
   });
 });
-
-// fastify.get('/:symbol', async (request, reply) => {
-//   const symbol = request.params.symbol.toUpperCase();
-//   const promises = APIS.map((api) => fetchPrices(api, symbol));
-//   const responses = await Promise.all(promises);
-//   const validResponses = responses.filter((response) => !response.error);
-
-//   if (validResponses.length === 0) {
-//     reply.status(400).send({message: `Unable to fetch prices for symbol ${symbol}`});
-//     return;
-//   }
-
-//   const totalLivePrice = validResponses.reduce((total, response) => total + response.livePrice, 0);
-//   const totalEndOfDayPrice = validResponses.reduce(
-//     (total, response) => total + (response.endOfDayPrice || 0),
-//     0
-//   );
-//   const averageLivePrice = totalLivePrice / validResponses.length;
-//   const averageEndOfDayPrice = totalEndOfDayPrice / validResponses.length;
-//   const livePrices = validResponses.map((response) => response.livePrice);
-
-//   reply.send({
-//     symbol,
-//     averageLivePrice,
-//     averageEndOfDayPrice,
-//     livePrices,
-//     validResponses,
-//     invalidResponses: responses.filter((response) => response.error),
-//   });
-// });
 
 // Start the server
 fastify.listen(3000, (err, address) => {
