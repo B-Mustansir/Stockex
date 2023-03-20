@@ -4,9 +4,26 @@ const crypto = require('crypto');
 const axios = require('axios');
 const finnhub = require('finnhub');
 const moment = require('moment');
+const fastifyEnv = require('@fastify/env');
 
+const schema = {
+  type: 'object',
+  required: ['finnhubKey', 'angelKey', 'alphaKey'],
+  properties: {
+    finnhubKey: {type: 'string'},
+    angelKey: {type: 'string'},
+    alphaKey: {type: 'string'},
+  },
+};
 
+const options = {
+  confKey: 'config',
+  schema,
+  dotenv: true,
+  data: process.env,
+};
 
+fastify.register(fastifyEnv, options);
 
 const api_key = finnhub.ApiClient.instance.authentications['api_key'];
 api_key.apiKey = process.env.finnhubKey;
