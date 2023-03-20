@@ -5,6 +5,9 @@ const axios = require('axios');
 const finnhub = require('finnhub');
 const moment = require('moment');
 
+
+
+
 const api_key = finnhub.ApiClient.instance.authentications['api_key'];
 api_key.apiKey = process.env.finnhubKey;
 const finnhubClient = new finnhub.DefaultApi();
