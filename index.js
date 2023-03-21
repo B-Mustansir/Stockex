@@ -32,6 +32,9 @@ const finnhubClient = new finnhub.DefaultApi();
 const apiKey = process.env.angelKey;
 
 async function getQuote(symbol) {
+  const api_key = finnhub.ApiClient.instance.authentications['api_key'];
+  api_key.apiKey = process.env.finnhubKey;
+  const finnhubClient = new finnhub.DefaultApi();
   return new Promise((resolve, reject) => {
     finnhubClient.quote(symbol, (error, data) => {
       if (error) {
