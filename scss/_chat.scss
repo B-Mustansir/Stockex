@@ -1,0 +1,69 @@
+// 
+// chat.scss
+// 
+
+.chat{
+    position: relative;
+
+    .chat-notification{
+        background-color: rgba($primary, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+
+        .chat-not-item{
+            background-color: $white;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+
+    .chat-box{
+        background-color: $white;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid rgba($muted, 0.1);
+        .question-box{
+            background-color: rgba($primary, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+           
+            h6{
+                line-height: 28px;
+                color: rgba($dark, 0.8);
+                font-size: 15px;
+            }
+        }
+        .avatar{
+            display: contents;
+        }
+
+        .chat-profile-left-item{
+        .question-box{
+                background-color: rgba($muted, 0.1);
+            }
+        }
+        
+    }
+
+    .newsletter-box{
+        background-color: $white;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid rgba($muted, 0.1);
+    }
+}
+
+
+body[data-layout-mode="dark"] {
+    .chat{
+        background-color: $body-dark-bg !important;
+
+        .chat-not-item , .chat-box, .newsletter-box{
+            background-color: $gray-dark-100 !important;
+            ::placeholder{
+                color: rgba($white, 0.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+// 
+// faq.scss
+// 
+
+
+
+.faq {
+    position: relative;
+
+    .faq-collaps {
+        // background-color: $white;
+      
+        .card {
+          border: 1px solid $light;
+          border-radius: 20px !important;
+          background-color: white;
+            overflow: hidden;
+          
+        }
+      }
+      
+        .accordion-item {
+          .accordion-header {
+            .accordion-button {
+              background-color: rgba(0, 176, 116, 0.1);
+            }
+          }
+        }
+      
+        .faq-collaps-2 {
+          .card {
+            border-color: rgba($muted, 0.1);
+            border-radius: 6px;
+          }
+        }
+      
+        .card-header {
+          background-color: transparent ;
+          border-bottom: none;
+        //   margin-left: 30px;
+        border-bottom: 1px solid rgba($white, 0.5);
+      
+        }
+      
+        a.faq[data-bs-toggle="collapse"].collapsed {
+          &:before {
+            content: "+";
+            line-height: 22px;
+          }
+          .card-header{
+            border-bottom: 0 !important;
+          }
+        }
+      
+        a.faq[data-bs-toggle="collapse"] {
+          &:before {
+            content: "–";
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            text-align: center;
+            background: rgba($dark, 0.4);
+            line-height: 18px;
+            display: block;
+            float: right;
+            font-family: "Material Design Icons";
+            font-size: 20px;
+            color: $white;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 600;
+          }
+        }
+        
+        .custom-form-faq {
+          position: relative;
+      
+          .form-control {
+            height: 44px;
+            font-size: 14px;
+            padding-left: 25px;
+            border-color: #e2e4e8;
+            color: $muted;
+          }
+      
+          .form-control {
+            &:focus {
+              border-color: #e2e4e8;
+              outline: 0;
+              box-shadow: none;
+            }
+          }
+      
+          .faq-icon {
+            position: absolute;
+            font-size: 18px;
+            right: 10px;
+            color: $muted;
+            margin-top: 40px;
+          }
+        
+        }
+        .card-body {
+            opacity: 100;
+        }
+  }
+  
+
+  body[data-layout-mode='dark'] {
+      .faq , .Privacy{
+        background-color:  $body-dark-bg  !important;
+        .card-header{
+          border-bottom: none !important;
+          h5{
+            color: $white !important;
+          }
+        }
+        .collapse{
+          background-color: $gray-dark-200;
+        }
+
+        .privacy-box{
+          background-color: $gray-dark-200;
+        }
+      }
+
+  }
+ 

@@ -1,0 +1,17 @@
+// 
+// cta.scss
+// 
+
+.cta{
+    background: radial-gradient(100.04% 100.76% at 50.49% -0.76%, #ee574c 0%, #050911 100%);
+}
+
+body[data-layout-mode='dark'] {
+    .cta{
+        background: $body-dark-bg !important;
+    }
+
+    .cta-3{
+        background: $gray-dark-100 !important;
+    }
+}

@@ -1,0 +1,35 @@
+// 
+// 
+// 
+
+
+.newsletter {
+    .newsletter-item {
+        background-color: $white;
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid rgba($muted, 0.1);
+
+        .newsletter-image {
+            background-color: rgba($primary, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+
+body[data-layout-mode='dark'] {
+
+    .newsletter{
+        background-color: $body-dark-bg !important;
+        .newsletter-item{
+           background-color: $gray-dark-100;
+            ::placeholder{
+                color: rgba($white, 0.3) !important;
+            }
+        }
+    }
+}

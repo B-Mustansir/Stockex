@@ -1,0 +1,54 @@
+.page-title {
+    margin-bottom: 20px;
+}
+
+.settings-menu {
+    a {
+        display        : inline-block;
+        margin-right   : 20px;
+        color          : $body-color;
+        font-weight    : $headings-font-weight;
+        font-size      : 16px;
+        // opacity     : 0.75;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color     : $primary;
+            // opacity: 1;
+        }
+    }
+}
+
+.verify-content {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    @include respond('phone-land') {
+        display: block;
+
+        .btn {
+            margin-left: 65px;
+            margin-top : 15px;
+        }
+    }
+}
+
+.icon-circle {
+    height         : 50px;
+    width          : 50px;
+    font-size      : 22px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    border-radius  : 50px;
+}
+
+.card {
+    .card {
+        box-shadow: none;
+        background: transparent;
+    }
+}

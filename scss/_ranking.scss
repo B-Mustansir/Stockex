@@ -1,0 +1,103 @@
+// 
+// ranking
+// 
+
+
+.ranking {
+    .nav {
+        .nav-item {
+            margin: 0 8px !important;
+
+            .nav-link {
+                color: $dark;
+            }
+        }
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: $primary;
+        background-color: transparent !important;
+    }
+
+    .tab-content {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 20px;
+
+        .tab-pane {
+            .table {
+                .rank-profile {
+                    box-shadow: $box-shadow;
+
+                    .number {
+                        height: 25px;
+                        width: 25px;
+                        font-size: 15px;
+                        line-height: 8px;
+                        align-items: center;
+                        color: $white;
+                    }
+
+                    td {
+                        vertical-align: middle;
+                        font-weight: 500;
+                    }
+                }
+
+                .table-title {
+                    th {
+                        padding: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    table{
+        overflow: hidden;
+    }
+}
+
+body[data-layout-mode='dark'] {
+    .ranking {
+        background-color: $body-dark-bg !important;
+
+        .tab-content {
+            background-color:  $gray-dark-100;
+            tr{
+                th{
+                    color: $white !important;
+                }
+            }
+
+            .rank-profile{
+                h6{
+                    color: $white !important;
+                }
+                td{
+                    color: $muted !important;
+                }
+                .text-success{
+                    color: $success !important;
+                }
+                .text-danger{
+                    color: $danger !important;
+                }
+            }
+        }
+
+        .nav-pills {
+            .nav-link {
+                color: $white !important;
+
+                &.active {
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+
+}

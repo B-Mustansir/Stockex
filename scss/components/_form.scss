@@ -1,0 +1,172 @@
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 5px;
+  height: 45px;
+  border: 1px solid $border-color;
+  padding: 0px 22px;
+  font-size: 14px;
+  // font-weight  : 500;
+  color: $dark;
+  // transition   : all 0.3s ease-in-out;
+  background: $white;
+
+  span {
+    margin-top: 0;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $body-color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $body-color;
+  }
+
+  &::placeholder {
+    color: $body-color;
+  }
+
+  &:hover {
+    box-shadow: none !important;
+    outline: none;
+    border-color: $border-color;
+    color: $dark;
+    background: $white;
+  }
+
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: none !important;
+    outline: none;
+    border-color: $primary;
+    color: $dark;
+    background: $white;
+  }
+}
+
+.form-select {
+  border-radius: 5px;
+  height: 45px;
+  border: 1px solid $border-color;
+  padding: 0px 22px;
+  font-size: 14px;
+  // font-weight  : 500;
+  color: $dark;
+  // transition   : all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: none !important;
+    outline: none;
+    border-color: $border-color;
+    color: $dark;
+  }
+
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: none !important;
+    outline: none;
+    border-color: $primary;
+    color: $dark;
+  }
+}
+
+textarea.form-control {
+  min-height: 100px;
+}
+
+input:-internal-autofill-selected {
+  background: lighten($body-bg, 2%) !important;
+  background-image: none !important;
+  color: -internal-light-dark-color(black, white) !important;
+}
+
+.input-group-text {
+  padding: 12px 15px;
+  background: $white;
+  margin-bottom: 0px !important;
+  color: $dark;
+  border-color: $border-color;
+}
+
+.input-group-append {
+  .input-group-text {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.input-group-prepend {
+  .input-group-text {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+// Validation Error
+label.error {
+  color: $danger;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -22px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-file {
+  position: relative;
+  margin-bottom: 3px;
+  .form-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+  }
+  .form-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    border-color: #ced4da;
+    border-radius: 0.25rem;
+    .form-file-text {
+      display: block;
+      flex-grow: 1;
+      padding: 0.375rem 0.75rem;
+      overflow: hidden;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background-color: #fff;
+      border-color: inherit;
+      border-style: solid;
+      border-width: 1px;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+    }
+    .form-file-button {
+      display: block;
+      flex-shrink: 0;
+      padding: 0.375rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #e9ecef;
+      border-color: inherit;
+      border-style: solid;
+      border-width: 1px;
+      border-top-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+      border-left: 0;
+    }
+  }
+}

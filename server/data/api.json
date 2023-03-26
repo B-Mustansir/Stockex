@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Google",
+    "url": "https://finance.google.com/finance/quote",
+    "params": {
+      "i": "1",
+      "f": "sd1t1l1ohgv"
+    },
+    "transformResponse": "function(data) { const match = data.match(/(\\d+)\\n(\\d+-\\d+-\\d+) (\\d+:\\d+:\\d+),(\\d+) (\\w+)/); if (match) { return { livePrice: parseFloat(match[2]), endOfDayPrice: parseFloat(match[3]) }; } else { throw new Error('Unable to parse Google Finance API response'); } }"
+  },
+  {
+    "name": "RapidAPI Yahoo Finance",
+    "url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com",
+    "livePricePath": "price.regularMarketPrice.raw",
+    "endOfDayPricePath": "prices[*].close",
+    "endOfDayParams": {
+      "period1": "Math.floor(Date.now() / 1000) - (7 * 24 * 60 * 60)",
+      "period2": "Math.floor(Date.now() / 1000)",
+      "frequency": "1d",
+      "filter": "history"
+    },
+    "transformResponse": "function(data) { return { livePrice: data.price.regularMarketPrice.raw, endOfDayPrice: data.prices.map(price => price.close) }; }",
+    "headers": {
+      "x-rapidapi-key": "{{RAPIDAPI_API_KEY}}",
+      "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+  },
+  {
+    "name": "Alpha Vantage",
+    "url": "https://www.alphavantage.co/query",
+    "params": {
+      "function": "GLOBAL_QUOTE",
+      "apikey": "{{ALPHA_VANTAGE_API_KEY}}"
+    },
+    "transformResponse": "function(data) { return { livePrice: parseFloat(data['Global Quote']['05. price']) }; }"
+  },
+  {
+    "name": "Angel One",
+    "url": "https://openapis.angelbroking.com/api/v1",
+    "livePricePath": "data.ltp",
+    "endOfDayPricePath": "data.candles[*].close",
+    "endOfDayParams": {
+      "symbol_token": "{{SYMBOL_TOKEN}}",
+      "interval": "15minute",
+      "from_date": "{{FROM_DATE}}",
+      "to_date": "{{TO_DATE}}"
+    },
+    "transformResponse": "function(data) { return { livePrice: data.data.ltp, endOfDayPrice: data.data.candles.map(candle => candle.close) }; }",
+    "headers": {
+      "Authorization": "Bearer {{ANGEL_ONE_API_KEY}}",
+      "Content-Type": "application/json"
+    }
+  }
+]

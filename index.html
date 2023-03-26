@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stockex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/whale.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+      <!--Navbar Start-->
+      <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo f-30 text-dark fw-bold" href="index.html">
+                <img src="images/whale-logo-stockex-bg.png" class="logo-dark" alt="" height="40" style="margin-left: 40px;">
+                <img src="images/whale-logo-stockex-bg.png" class="logo-light" alt="" height="40" style="margin-left: 40px;">
+            </a>
+            <div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto navbar-center">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link" href="index.html" id="homedrop" role="button">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="price-details-copy.html" class="nav-link">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="creatore.html" class="nav-link">Developers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="ranking.html" class="nav-link">Activity</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagedropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Creators
+                        </a>
+
+                        <div class="dropdown-menu dropmenu-width dropdown-menu-center">
+                            <div class="row">
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="newsletter.html"><i
+                                                class="mdi mdi-email-open-outline f-20 me-2 align-middle"></i>Newsletter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="creatore.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Creators</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html"><i
+                                                class="mdi mdi-account-outline f-20 me-2 align-middle"></i>Login</a></li>
+
+                                    <li><a class="dropdown-item" href="register.html"><i
+                                                class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Register</a></li>
+
+                                    <li><a class="dropdown-item" href="privacy.html"><i
+                                                class="mdi mdi-lock-open-outline f-20 me-2 align-middle"></i>Privacy</a></li>
+                                </ul>
+
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="wallet.html"><i
+                                                class="mdi mdi-wallet-travel f-20 me-2 align-middle"></i>Connect Wallet</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="faq.html"><i
+                                                class="mdi mdi-comment-question-outline f-20 me-2 align-middle"></i>Faq</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="submit-request.html"><i
+                                                class="mdi mdi-check-circle-outline f-20 me-2 align-middle"></i>submit
+                                            Reqeust</a></li>
+
+                                    <li><a class="dropdown-item" href="ranking.html"><i
+                                                class="mdi mdi-numeric-1-box-outline f-20 me-2 align-middle"></i>Ranking</a></li>
+
+                                    <li><a class="dropdown-item" href="404.html"><i
+                                                class="mdi mdi-alert-outline f-20 me-2 align-middle"></i>404</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li> -->
+
+                    <!--end dropdown-->
+
+
+                    <!-- <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><i
+                                        class="mdi mdi-account-edit f-20 me-2 align-middle"></i>Edit profile</a></li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li> -->
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <!--end dropdown-->
+                </ul>
+                <!--end navbar-nav-->
+
+                <a href="wallet.html" class="btn btn-primary">Connect to Wallet</a>
+            </div>
+
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- start home -->
+    <section class="home bg-image" id="home">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-content home-heading">
+                        <h1 class="fw-bold display-5">Discover <span class="text-primary">Tokenized <br></span>
+                            Stock Exchange</h1>
+                        <p class="text-muted my-4">An awesome place To Swap and Buy Tokenized stocks Across The World. It
+                            comes with a creative design, home page options, different explore and digital asset pages and
+                            items.</p>
+                        <button class="btn btn-dark">Explore</button>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="32">0</h2><span
+                                        class="h2 fw-bold"></span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">Tokens</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="20">0</h2><span
+                                        class="h2 fw-bold"></span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">Pools</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="10">0</h2><span
+                                        class="h2 fw-bold">0</span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">DEX Aggregators</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="client-slider" id="clients-slider">
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/bitcoin2.jpg" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">BTC</p>
+                                    <h5 class="fw-bold">Bitcoin</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/ethereum.jpg" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">ETH</p>
+                                    <h5 class="fw-bold">Ethereum</h5>
+
+                                    <div class="d-flex">
+                                        <div class="slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/tether.jpg" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">USDT</p>
+                                    <h5 class="fw-bold ">Tether</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/binance2.jpg" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">BNB</p>
+                                    <h5 class="fw-bold">Binance Coin</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                    <!-- End slider -->
+                </div>
+
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+    <!-- start slider blog -->
+    <section class="slider-blog section">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-gradiant fw-bold">Tranding Stocks</h6>
+                    <h2 class="fw-bold">Top Crypto Tokens</h2>
+                    <p class="text-muted">Based on the token volume</p>
+                </div>
+            </div>
+
+            <div class="swiper-container pb-5 blog-slider">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide mt-5 mx-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img11.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Ether</span> </h6>
+                                            <p class="mb-0">ETH</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/NATIVE" class="text-muted mb-0">$ 1.79k</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#1</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 py-4 py-lg-0">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img22.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">USD Coin</span> </h6>
+                                            <p class="mb-0">USDC</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" class="text-muted mb-0">$ 1.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#2</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img33.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">Tether<span class="">USD</span> </h6>
+                                            <p class="mb-0">USDT</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/0xdAC17F958D2ee523a2206206994597C13D831ec7" class="text-muted mb-0">$ 1.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#3</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img44.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Wrapped BTC</span> </h6>
+                                            <p class="mb-0">WBTC</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599" class="text-muted mb-0">$ 28.15k</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#4</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 py-4 py-lg-0">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img55.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Dai Stablecoin</span> </h6>
+                                            <p class="mb-0">DAI</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/0x6B175474E89094C44Da98b954EedeAC495271d0F" class="text-muted mb-0">$ 1.00</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#5</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img66.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Lido DAO Token</span> </h6>
+                                            <p class="mb-0">LDO</p>
+                                            <a href="https://app.uniswap.org/#/tokens/ethereum/0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32" class="text-muted mb-0">$ 2.27</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#6</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/frax-logo-bg.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Frax</span> </h6>
+                                            <p class="mb-0">FRAX</p>
+                                            <p class="text-muted mb-0">$ 1.00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#7</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/uniswap-logo-bg.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Uniswap</span> </h6>
+                                            <p class="mb-0">UNI</p>
+                                            <p class="text-muted mb-0">$ 5.85</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/matic-logo-bg.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold"><span class="">Matic</span> </h6>
+                                            <p class="mb-0">MARIC</p>
+                                            <p class="text-muted mb-0">$ 1.11</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#9</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- next / prev arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- !next / prev arrows -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end slider blog -->
+
+    <!-- login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" rows="4" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-12">
+                            <label for="validationCustom002" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom002" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom005" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom005" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end Register modal -->
+
+
+
+    <!-- start home -->
+    <section class="features section pt-0" id="market">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h6 class="text-gradiant fw-bold">STX Marketplace</h6>
+                        <h1 class="fw-bold">A New Place To Tokenize <br> Real-world Assets</h1>
+                        <div class="d-flex align-items-center mt-4">
+                            <a href="index.html"><button class="btn btn-primary">Explore Now</button></a>
+                            <a href="register.html"><button class="btn btn-outline-dark ms-4">Create Account</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img src="images/features-stx-bg.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-5  offset-lg-1">
+                    <div class="swiper-container features-slider pb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide mx-5 pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/tcs-logo-bg.png" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">TCS</p>
+                                                <h6 class="fw-bold">Tata Consultancy Services Ltd </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-cash-usd"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Price</p>
+                                                <h6 class="fw-bold">₹ 3120</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Tokenized TCS Stock</h2>
+                                    <p class="text-muted">1st Edition</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Price</h6>
+                                    <h2 class="fw-bold">1.00<span class="f-16"> $</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">20</h3>
+                                            <p>Days</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">6</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Mins</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Buy a token</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide mx-5 pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/infosys-logo.png" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">INFY</p>
+                                                <h6 class="fw-bold">Infosys Ltd </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-cash-usd"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Price</p>
+                                                <h6 class="fw-bold">₹ 1380</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Tokenized INFY Stock</h2>
+                                    <p class="text-muted">1st Edition</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Price</h6>
+                                    <h2 class="fw-bold">1.00<span class="f-16"> $</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">10</h3>
+                                            <p>Days</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">6</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Mins</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Buy a token</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide mx-5 pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/reliance-logo.png" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">RELIANCE</p>
+                                                <h6 class="fw-bold">Reliance Industries Ltd </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-cash-usd"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Price</p>
+                                                <h6 class="fw-bold">₹ 2203</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Tokenized RELIANCE Stock</h2>
+                                    <p class="text-muted">1st Edition</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Price</h6>
+                                    <h2 class="fw-bold">1.00<span class="f-16"> $</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">10</h3>
+                                            <p>Days</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">6</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Mins</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Buy a token</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- next / prev arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- !next / prev arrows -->
+                    </div>
+
+
+                    <!-- End slider -->
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+    <!-- start blog -->
+    <section class="blog section bg-light">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="title-content text-center text-md-start">
+                        <h2 class="fw-bold">Find Best Stocks</h2>
+                        <p class="text-muted">Start an Extraodinary Era of Digital Stocks</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="text-md-end text-center">
+                        <a href="index-2.html"><button class="btn btn-primary ">Discover All <i class="mdi mdi-chevron-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-1-apple-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Apple, Inc.</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 160</p>
+                            </div>
+                            <p class="text-muted">AAPL</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-2-microsoft-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Microsoft Corporation</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 280</p>
+                            </div>
+                            <p class="text-muted">MSFT</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-3-alphabet-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Alphabet Inc. - Class A</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 105</p>
+                            </div>
+                            <p class="text-muted">GOOGL</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-4-amazon-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Amazon.com Inc.</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 98</p>
+                            </div>
+                            <p class="text-muted">AMZN</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-5-tesla-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Tesla, Inc.</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 190</p>
+                            </div>
+                            <p class="text-muted">TSLA</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-6-mcdonalds.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">McDonald's Corp.</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 271</p>
+                            </div>
+                            <p class="text-muted">MCD</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-7-nike-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Nike, Inc.</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 120</p>
+                            </div>
+                            <p class="text-muted">NKE</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-8-coke-bg.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Coca-Cola Company, The</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">$ 60</p>
+                            </div>
+                            <p class="text-muted">KO</p>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Price : <span class="fw-bold"> 1 STX</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">  <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+   <!-- start footer -->
+   <section class="footer">
+    <div class="container">
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info mt-4">
+                        <!-- <img src="images/inner-image/logo-dark.png" alt="" height="22"> -->
+                       <a class="logo f-30 text-dark fw-bold" href="index.html">
+                                <img src="images/whale-logo-stockex-bg.png" class="logo-dark" alt="" height="40">
+                                <img src="images/whale-logo-stockex-bg.png" class="logo-light" alt="" height="40">
+                            </a>
+                        <p class="f-18 mt-2 text-muted">
+                            Trading opportunities Are Like <br>
+                            Buses, There's Always Another <br>
+                            One Coming...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="mt-4">
+                                <h5 class="f-18 fw-bold">Policies</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="">Security & Provciy</a></li>
+                                    <li><a href="price-details-copy.html">Marketplace</a></li>
+                                    <li><a href="">Term & Condition</a></li>
+                                    <li><a href="collection.html">Collection</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="mt-4">
+                                <h5 class="f-18 fw-bold">Company</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="404.html">Pages</a></li>
+                                    <li><a href="404.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="mt-4 pl-0 pl-lg-4">
+                        <h5 class="f-18 fw-bold">Follow Us</h5>
+                        <ul class="list-inline social-icons-list pt-3">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end footer -->
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- counter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+
+    <script>
+        var slider = tns({
+            container: '.client-slider',
+            loop: true,
+            autoplay: true,
+            mouseDrag: true,
+            controls: false,
+            navPosition: "bottom",
+            nav: true,
+            autoplayTimeout: 4000,
+            speed: 900,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            controlsText: ['&#8592;', '&#8594;'],
+            autoplayButtonOutput: false,
+            gutter: 30,
+            responsive: {
+
+                992: {
+                    gutter: 30,
+                    items: 1.5
+                },
+
+            }
+        });
+
+    </script>
+
+    <script>
+        new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 20,
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            paginationClickable: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 1500,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+    </script>
+
+    <script>
+        var slider = tns({
+            container: '.testi-slider',
+            loop: true,
+            autoplay: true,
+            mouseDrag: true,
+            controls: true,
+            navPosition: "bottom",
+            nav: false,
+            autoplayTimeout: 4000,
+            speed: 900,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            controlsText: ['&#8592;', '&#8594;'],
+            autoplayButtonOutput: false,
+            gutter: 30,
+            responsive: {
+
+                992: {
+                    gutter: 30,
+                    items: 3
+                },
+
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

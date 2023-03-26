@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSI DEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/faviconM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71" data-layout-mode="dark">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-dark bg-secondary border-secondary rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo f-30 text-dark fw-bold" href="index.html">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+            </a>
+            <div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto navbar-center">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="index.html"><i
+                                        class="mdi mdi-home-outline f-20 me-2 align-middle"></i>Home Page 1</a></li>
+                            <li><a class="dropdown-item" href="index-3.html"><i
+                                        class="mdi mdi-home-modern f-20 me-2 align-middle"></i>Home Page 2</a></li>
+                            <li><a class="dropdown-item" href="index-4.html"><i
+                                        class="mdi mdi-home-variant f-20 me-2 align-middle"></i>Home Page 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index-2.html" class="nav-link">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagedropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+
+                        <div class="dropdown-menu dropmenu-width dropdown-menu-center">
+                            <div class="row">
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="activity.html"><i
+                                                class="mdi mdi-chart-line f-20 me-2 align-middle"></i>Activity</a></li>
+
+                                    <li><a class="dropdown-item" href="item-details.html"><i
+                                                class="mdi mdi-image-filter-frames f-20 me-2 align-middle"></i>Item
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="post-detail.html"><i
+                                                class="mdi mdi-image-filter-center-focus-weak f-20 me-2 align-middle"></i>Post
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="newsletter.html"><i
+                                                class="mdi mdi-email-open-outline f-20 me-2 align-middle"></i>Newsletter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="creatore.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Creatore</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html"><i
+                                                class="mdi mdi-account-outline f-20 me-2 align-middle"></i>Login</a></li>
+
+                                    <li><a class="dropdown-item" href="register.html"><i
+                                                class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Register</a></li>
+
+                                    <li><a class="dropdown-item" href="privacy.html"><i
+                                                class="mdi mdi-lock-open-outline f-20 me-2 align-middle"></i>Privacy</a></li>
+
+                                </ul>
+
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="wallet.html"><i
+                                                class="mdi mdi-wallet-travel f-20 me-2 align-middle"></i>Connect Wallet</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="faq.html"><i
+                                                class="mdi mdi-comment-question-outline f-20 me-2 align-middle"></i>Faq</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="submit-request.html"><i
+                                                class="mdi mdi-check-circle-outline f-20 me-2 align-middle"></i>submit
+                                            Reqeust</a></li>
+
+                                    <li><a class="dropdown-item" href="chat.html"><i
+                                                class="mdi mdi-message-text-outline f-20 me-2 align-middle"></i>Chat</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="artical.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Artical</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="ranking.html"><i
+                                                class="mdi mdi-numeric-1-box-outline f-20 me-2 align-middle"></i>Ranking</a></li>
+
+                                    <li><a class="dropdown-item" href="404.html"><i
+                                                class="mdi mdi-alert-outline f-20 me-2 align-middle"></i>404</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!--end dropdown-->
+
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><i
+                                        class="mdi mdi-account-edit f-20 me-2 align-middle"></i>Edit profile</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <!--end dropdown-->
+                </ul>
+                <!--end navbar-nav-->
+
+                <a href="wallet.html" class="btn btn-primary">Connect to Wallet</a>
+
+            </div>
+
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- start home -->
+    <section class=" home-3 section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-content text-start">
+                        <div class="title home-heading">
+                            <h1 class="fw-bold"> The Way To Find Any Degital Content</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit sapiente voluptate
+                                aliquam repellendus, ipsam repudiandae ut illum sit.</p>
+                            <button class="btn btn-dark rounded">Get Started <i
+                                    class="mdi mdi-arrow-top-right align-middle"></i></button>
+                        </div>
+                        <div class="mt-5 border-bottom"></div>
+                        <div class="count-detail mt-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h2 class="counter_value fw-bold" data-bs-target="40">0</h2><span
+                                                class="h2 fw-bold">K</span><span class="h2">+</span>
+                                        </div>
+                                        <p class="counter-caption">Creative</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h2 class="counter_value fw-bold" data-bs-target="130">0</h2><span
+                                                class="h2 fw-bold">K</span><span class="h2">+</span>
+                                        </div>
+                                        <p class="counter-caption">Artwork</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h2 class="counter_value fw-bold" data-bs-target="20">0</h2><span
+                                                class="h2 fw-bold">K</span><span class="h2">+</span>
+                                        </div>
+                                        <p class="counter-caption">Auctions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 offset-lg-2">
+                    <div class="card">
+                        <img src="images/img.png" alt="img" class="img-fluid">
+                        <div class="card-body px-5 py-4">
+                            <h2 class="mb-0 fw-bold">DISCOVER</h2>
+
+                            <div class="deatil my-2">
+                                <p class="fw-bold mb-0 f-14">Sell Price</p>
+
+                                <div class="d-flex">
+                                    <span class="h4 fw-bold">2.06 ETH</span>
+                                    <p class="f-14 fw-bold mt-1 ms-2">($15,237,08)</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <button class="btn btn-dark rounded">Bid</button>
+                                <button class="btn btn-outline-dark ms-2 rounded">View Artwork</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+
+    <!-- blog section -->
+    <section class="blog-3 section bg-white" id="seller">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-heading pb-5">
+                        <div class="d-flex align-items-center ">
+                            <h2 class="fw-bold">CriptoCurrency Rate</h2>
+                            <h6 class="ms-auto"><a href="" class="text-muted ">View All Collation</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-1.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Senseless Void</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Cats</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn"><i class="mdi mdi-heart text-danger f-18 align-middle"></i>
+                                        100</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-2.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Ocean Swift</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.19 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Speider</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart-outline f-18 align-middle"></i> Like</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-3.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Ashoka Shell</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Birds</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart-outline f-18 align-middle"></i> Like</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-4.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Yeti Crypt</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Cats</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart text-danger f-18 align-middle"></i> 100</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-5.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Argus Panoptes</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Halloween </p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart-outline f-18 align-middle"></i> Like</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-6.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Frank Fabel</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Dragon</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart-outline f-18 align-middle"></i> Like</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-7.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Great Ape</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Android</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted"><i
+                                            class="mdi mdi-heart-outline f-18 align-middle"></i> Like</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="blog-box p-3 mt-3">
+                        <div class="blog-image">
+                            <img src="images/blog-3/img-8.png" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="blog-body pt-3">
+                            <h6 class="mb-1">Dropbar</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="text-content">
+                                    <h6><i class="mdi mdi-apple-safari"></i> 0.24 ETH</h6>
+                                    <p class="f-20 text-muted mb-0">By Barbi</p>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn"><i class="mdi mdi-heart text-danger f-18 align-middle"></i>
+                                        100</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blog section -->
+
+
+
+    <!-- popular-art section -->
+    <section class="section popular-art bg-light" id="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-heading pb-5">
+                        <div class="d-flex align-items-center">
+                            <h2 class="fw-bold">Your Gallery</h2>
+                            <h6 class="ms-auto"><a href="" class="text-muted">View All Collation</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pop-box">
+                        <div class="pop-heading">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/pop-art/pop-1.png" alt="" class="img-fluid">
+                                            <span
+                                                class="position-absolute bottom-0 start-100 translate-middle-x p-2 bg-blue border border-4 border-white rounded-circle">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h6 class="mb-0 fw-bold">Ocean Swift</h6>
+                                        <p class="mb-0">C245bsTd112...47cSta85mB9</p>
+                                    </div>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-image mt-4">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="images/pop-art/1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="pop-box">
+                        <div class="pop-heading">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/pop-art/pop-2.png" alt="" class="img-fluid">
+                                            <span
+                                                class="position-absolute bottom-0 start-100 translate-middle-x p-2 bg-blue border border-4 border-white rounded-circle">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h6 class="mb-0 fw-bold">Frank Fabel</h6>
+                                        <p class="mb-0">C245bsTd112...47cSta85mB9</p>
+                                    </div>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-image mt-4">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="images/pop-art/i-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/i-2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/i-3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/i-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="pop-box">
+                        <div class="pop-heading">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/pop-art/pop-3.png" alt="" class="img-fluid">
+                                            <span
+                                                class="position-absolute bottom-0 start-100 translate-middle-x p-2 bg-blue border border-4 border-white rounded-circle">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h6 class="mb-0 fw-bold">Argus Panoptes</h6>
+                                        <p class="mb-0">C245bsTd112...47cSta85mB9</p>
+                                    </div>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-image mt-4">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="images/pop-art/s-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/s-2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/s-3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/s-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="pop-box">
+                        <div class="pop-heading">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/pop-art/pop-4.png" alt="" class="img-fluid">
+                                            <span
+                                                class="position-absolute bottom-0 start-100 translate-middle-x p-2 bg-blue border border-4 border-white rounded-circle">
+                                                <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h6 class="mb-0 fw-bold">Senseless Void</h6>
+                                        <p class="mb-0">C245bsTd112...47cSta85mB9</p>
+                                    </div>
+                                </div>
+                                <div class="blog-like-button ms-auto">
+                                    <button class="btn btn-soft-muted">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-image mt-4">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="images/pop-art/t-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/t-2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/t-3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <img src="images/pop-art/t-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end popular-art -->
+
+    <!-- cta section -->
+    <section class="section cta-2">
+        <div class="container">
+            <div class="cta-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="cta-content">
+                            <h1 class="text-white">Discover Collect, And <span>Sell</span> Extraordinary NFTs</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-image">
+                            <img src="images/cta.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cta -->
+
+
+
+     <!-- start footer -->
+     <section class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info mt-4">
+                            <!-- <img src="images/inner-image/logo-dark.png" alt="" height="22"> -->
+                            <a class="logo f-30 text-dark fw-bold" href="index.html">
+                                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+                            </a>
+                            <p class="f-18 mt-2 text-muted">
+                                Business opportunities Are Like <br>
+                                Buses, There's Always Another <br>
+                                One Coming...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Policies</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="">Security & Provciy</a></li>
+                                        <li><a href="">Marketplace</a></li>
+                                        <li><a href="">Term & Condition</a></li>
+                                        <li><a href="">Collection</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Company</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="activity.html">Pages</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="mt-4 pl-0 pl-lg-4">
+                            <h5 class="f-18 fw-bold">Follow Us</h5>
+                            <ul class="list-inline social-icons-list pt-3">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="my-4 text-muted">©
+                            <script>document.write(new Date().getFullYear())</script> Artlink. Design with <i
+                                class="mdi mdi-heart text-danger"></i> by <a href="https://themesdesign.in/"
+                                target="_blank" class="text-reset">Themsdesign</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+
+
+
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="js/tiny-slider.js"></script>
+
+    <!-- counter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

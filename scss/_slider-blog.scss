@@ -1,0 +1,100 @@
+// 
+// slider-blog
+// 
+
+.blog-slider{
+    .client-slider{
+        .item{
+            padding-bottom: 20px;
+            .card{
+                background-color: $white;
+                padding: 20px;
+                border-radius: 15px;
+                border: 1px solid rgba($muted, 0.2);
+                transition: all .4s cubic-bezier(.4,0,.2,1);
+                .blog-slider-image{
+                    overflow: hidden;
+                    border-radius: 15px;
+                    img{
+                        transition: all .4s cubic-bezier(.4,0,.2,1);
+                    }
+                }
+                &:hover{
+                    .blog-slider-image{
+                        img{
+                            transform: scale(1.2);
+                            transition: all .4s cubic-bezier(.4,0,.2,1);
+                        }
+                    }
+                }
+
+                .slider-content-image {
+                    .avatar-xs {
+                        img {
+                            border-radius: 50px;
+                            border: 4px solid $white;
+                        }
+                    }
+                
+                    .top-child {
+                        position: relative;
+                        margin-left: -15px;
+                    }
+                }
+                
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: $box-shadow-lg;
+                }
+            }
+        }
+    }
+    .tns-controls{
+        position: absolute;
+        top: -80px;
+        right: 0;
+        button{
+            margin: 0 20px;
+            background-color: transparent;
+            border-radius: 50px;
+            height: 40px;
+            width: 40px;
+            border: 2px solid rgba($muted, 0.5);
+            color: rgba($muted, 0.8);
+        }
+    }
+}
+
+
+body[data-layout-mode='dark'] {
+    .blog-slider{
+        // background-color: $gray-dark-100 !important;
+        .card{
+            background-color: $body-dark-bg !important;
+
+             .avatar-xs{
+                 img{
+                    border: 4px solid $body-dark-bg !important;
+                 }
+            }
+        }
+
+        .blog-box{
+            background-color: $gray-dark-100 !important;
+            .plus-icon{
+                i{
+                    color: $white !important;
+                }
+            }
+            h6{
+                span{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+
+    .slider4{
+        background-color: $gray-dark-100 !important;
+    }
+}

@@ -1,0 +1,117 @@
+.section-padding {
+    padding: 100px 0;
+
+    @include respond('tab-land') {
+        padding: 80px 0;
+    }
+
+    @include respond('tab-port') {
+        padding: 75px 0;
+    }
+
+    @include respond('phone-land') {
+        padding: 60px 0;
+    }
+
+    @include respond('phone') {
+        padding: 50px 0;
+    }
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+
+.breadcrumbs {
+    display        : flex;
+    justify-content: flex-end;
+
+    li {
+        a {
+            color      : $text-muted;
+            display    : inline-block;
+            margin-left: 15px;
+            font-size  : 14px;
+        }
+
+        &.active {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+// Scrollbar 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow   : inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background   : #999;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.trade-balance {
+    position: relative;
+    height  : 380px;
+}
+
+.position-value {
+    position: relative;
+    height  : 320px;
+}
+
+.shadow-sm {
+    box-shadow: $shadow-sm;
+}
+
+.shadow-lg {
+    box-shadow: $shadow-lg;
+}
+
+
+
+.section-title {
+    margin-bottom: 75px;
+
+    h2 {
+        text-align : center;
+        font-weight: 600
+    }
+}
+
+
+#map-canvas {
+    height: 500px;
+}

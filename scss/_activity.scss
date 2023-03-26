@@ -1,0 +1,38 @@
+// 
+// activity.scss
+// 
+
+
+.activity{
+    .nav{
+        button{
+            border-radius: 30px;
+            background-color: $white;
+            margin: 8px 0;
+            box-shadow: $box-shadow;
+            color: $dark;
+            &.active,
+            &.show{
+                background-color: $dark;
+            }
+        }
+    }
+}
+
+
+body[data-layout-mode="dark"] {
+    .activity{
+        background-color: $body-dark-bg !important;
+
+       .nav button.active{
+            background-color: $gray-dark-100 !important;
+        }
+
+        .activity-box{
+            background-color: $gray-dark-100;
+            h6{
+                color: $white !important;
+            }
+        }
+    }
+}

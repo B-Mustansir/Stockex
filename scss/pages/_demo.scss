@@ -1,0 +1,74 @@
+// .intro {
+//     // padding      : 100px 0px;
+//     // border-bottom: 1px solid $border-color;
+
+//     .intro-content {
+//         h1 {
+//             // font-weight: 400;
+//             // line-height       : 55px;
+//             margin-bottom     : 30px;
+//             // strong {
+//             //     font-weight: 500;
+//             // }
+//         }
+
+//         p {
+//             font-size    : 20px;
+//             margin-bottom: 50px;
+//         }
+//     }
+// }
+
+// .intro-btn {
+//     @include respond('tab-port') {
+//         margin-bottom: 50px;
+//     }
+
+//     .btn-primary {
+//         padding     : 10px 30px;
+//         margin-right: 30px;
+//         font-weight : 600;
+//         font-size   : 16px;
+//     }
+
+//     .btn-outline-primary {
+//         padding    : 10px 30px;
+//         font-weight: 600;
+//         font-size  : 16px;
+//     }
+// }
+
+
+
+.demo_img {
+    text-align   : center;
+    margin-bottom: 60px;
+
+    .img-wrap {
+        // max-height: 175px;
+        overflow     : hidden;
+        margin-bottom: 15px;
+        box-shadow   : 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+        // background   : lighten($color: $primary, $amount: 45%);
+        padding      : 10px;
+        border-radius: 5px;
+            border: 1px solid #EFF2F7;
+    }
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.intro-demo_img {
+    // box-shadow: 0px 20px 25px rgba(22, 28, 45, 0.05);
+    background   : $white;
+    box-shadow   : 0px 36px 48px rgba(31, 66, 135, 0.04);
+    padding      : 10px;
+    border-radius: 10px;
+
+    img {
+        border-radius: 5px;
+    }
+
+}
