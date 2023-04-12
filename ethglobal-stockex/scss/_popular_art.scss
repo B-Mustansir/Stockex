@@ -1,0 +1,131 @@
+// 
+// popular-art.scss
+// 
+
+
+.pop-box{
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    p{
+        color: rgba($muted, 0.8);
+    }
+    .pop-heading{
+        .avatar{
+            img{
+                border-radius: 50px;
+            }
+        }
+        .blog-like-button{
+            button{
+                padding: 8px 18px;
+                border-radius: 5px;
+                color: $dark !important;
+                background-color: rgba($muted, 0.2);
+                border :none !important;
+                &:hover,
+                &:focus,
+                &:active{
+                    background-color: rgba($secondary, 0.7);
+                    border-color: rgba($secondary, 0.7) !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+    .pop-image{
+        img{
+            border-radius: 10px;
+        }
+    }
+}
+
+
+.cta-2{
+    .cta-box{
+        background-color: $black ;
+        border-radius: 20px;
+       
+        .cta-content{
+            padding: 30px 60px;
+            h1{
+                span{
+                    // font-size: 72px;
+                    background: linear-gradient(to right, #f2273a 0%, #ff9000 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        .cta-image{
+            position: relative;
+            margin-top: -40%;
+        }
+      
+    }
+}
+
+@media (max-width:992px){
+    .cta{
+        .cta-image{
+            margin-top: 0 !important;
+        }
+    }
+
+    .cta-2{
+        .cta-box{
+            .cta-image{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+body[data-layout-mode='dark'] {
+    .popular-art{
+        background-color: $body-dark-bg !important;
+
+        .pop-box{
+            background-color: $gray-dark-100;
+            .blog-heading{
+                h2{
+                    color: $white !important;
+                }  
+            }
+           
+            .border-white {
+                border-color: $body-dark-bg!important;
+            }
+    
+            .blog-like-button{
+                button{
+                    padding: 8px 18px;
+                    border-radius: 5px;
+                    color: $dark !important;
+                    background-color: $secondary;
+                    border :none !important;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        background-color: rgba($secondary, 0.7);
+                        border-color: rgba($secondary, 0.7) !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+
+      
+    }
+
+    .cta{
+        background-color: $gray-dark-100;
+        color: $white !important;
+        .cta-box{
+            background-color: $body-dark-bg;
+        }
+    }
+}

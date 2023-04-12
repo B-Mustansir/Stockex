@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSI DEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/faviconM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+      <!--Navbar Start-->
+      <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo f-30 text-dark fw-bold" href="index.html">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+            </a>
+            <div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto navbar-center">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="index.html"><i
+                                        class="mdi mdi-home-outline f-20 me-2 align-middle"></i>Home Page 1</a></li>
+                            <li><a class="dropdown-item" href="index-3.html"><i
+                                        class="mdi mdi-home-modern f-20 me-2 align-middle"></i>Home Page 2</a></li>
+                            <li><a class="dropdown-item" href="index-4.html"><i
+                                        class="mdi mdi-home-variant f-20 me-2 align-middle"></i>Home Page 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index-2.html" class="nav-link">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagedropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+
+                        <div class="dropdown-menu dropmenu-width dropdown-menu-center">
+                            <div class="row">
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="activity.html"><i
+                                                class="mdi mdi-chart-line f-20 me-2 align-middle"></i>Activity</a></li>
+
+                                    <li><a class="dropdown-item" href="item-details.html"><i
+                                                class="mdi mdi-image-filter-frames f-20 me-2 align-middle"></i>Item
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="post-detail.html"><i
+                                                class="mdi mdi-image-filter-center-focus-weak f-20 me-2 align-middle"></i>Post
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="newsletter.html"><i
+                                                class="mdi mdi-email-open-outline f-20 me-2 align-middle"></i>Newsletter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="creatore.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Creatore</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html"><i
+                                                class="mdi mdi-account-outline f-20 me-2 align-middle"></i>Login</a></li>
+
+                                    <li><a class="dropdown-item" href="register.html"><i
+                                                class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Register</a></li>
+
+                                    <li><a class="dropdown-item" href="privacy.html"><i
+                                                class="mdi mdi-lock-open-outline f-20 me-2 align-middle"></i>Privacy</a></li>
+
+                                </ul>
+
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="wallet.html"><i
+                                                class="mdi mdi-wallet-travel f-20 me-2 align-middle"></i>Connect Wallet</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="faq.html"><i
+                                                class="mdi mdi-comment-question-outline f-20 me-2 align-middle"></i>Faq</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="submit-request.html"><i
+                                                class="mdi mdi-check-circle-outline f-20 me-2 align-middle"></i>submit
+                                            Reqeust</a></li>
+
+                                    <li><a class="dropdown-item" href="chat.html"><i
+                                                class="mdi mdi-message-text-outline f-20 me-2 align-middle"></i>Chat</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="artical.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Artical</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="ranking.html"><i
+                                                class="mdi mdi-numeric-1-box-outline f-20 me-2 align-middle"></i>Ranking</a></li>
+
+                                    <li><a class="dropdown-item" href="404.html"><i
+                                                class="mdi mdi-alert-outline f-20 me-2 align-middle"></i>404</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!--end dropdown-->
+
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><i
+                                        class="mdi mdi-account-edit f-20 me-2 align-middle"></i>Edit profile</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <!--end dropdown-->
+                </ul>
+                <!--end navbar-nav-->
+                <a href="wallet.html" class="btn btn-primary">Connect to Wallet</a>
+
+            </div>
+
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- start section -->
+    <section class="faq section bg-light">
+        <!-- start container -->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb default mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="text-muted">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active text-primary" aria-current="page">Faqs</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <div class="inner-heading text-center">
+                        <div class="mt-4">
+                            <h1 class="fw-bold">Frequently asked questions</h1>
+                            <P class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut odio dolores,
+                                soluta eius incidunt perferendis? Repellat necessitatibus.</P>
+                        </div>
+                    </div>
+
+                    <div class="heading-bottom-icon d-flex justify-content-center text-center">
+                        <i class="mdi mdi-image-filter-vintage"></i>
+                        <i class="mdi mdi-image-filter-vintage mx-2"></i>
+                        <i class="mdi mdi-image-filter-vintage"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row faq align-items-center mt-5">
+                <div class="col-lg-12">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5">
+                            <img src="images/inner-image/faq/undraw_questions_re_1fy7.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+
+                            <div class="accordion mt-5" id="accordionExample">
+                                <div class="faq-collaps faq-collaps-2">
+                                    <!-- start 1 -->
+                                    <div class="card mt-4">
+                                        <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
+                                            <div class="card-header p-4" id="heading1">
+                                                <h5 class="mb-0 text-dark">Pharetra convallis magna mattis?</h5>
+                                            </div>
+                                        </a>
+
+                                        <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                                            data-parent="#accordionExample">
+                                            <div class="d-flex card-body align-items-center">
+                                                <img src="images/inner-image/faq/question-mark.png" alt=""
+                                                    class="img-fluid">
+                                                <p class="mb-0 text-muted ms-2">
+
+                                                    Vulputate lobortis tincidunt porttitor massa morbi
+                                                    suscipit mollis luctus ullamcorper phasellus ante finibus facilisis
+                                                    .</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end 1 -->
+
+
+                                    <!-- start 2 -->
+                                    <div class="card mt-4">
+                                        <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
+                                            <div class="card-header p-4" id="heading2">
+                                                <h5 class="mb-0 text-dark">Condimentum porttitor at magna?</h5>
+                                            </div>
+                                        </a>
+                                        <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body align-items-center">
+                                                <p class="mb-0 text-muted">Quisque tincidunt the malesuada aliquet
+                                                    ullamcorper
+                                                    Suspendisse lectus congue iaculis vitae purus Nullam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end 2 -->
+
+                                    <!-- start 3 -->
+
+                                    <div class="card mt-4">
+                                        <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
+                                            <div class="card-header p-4" id="heading3">
+                                                <h5 class="mb-0 text-dark">Nullya lectus feugiat placerat?</h5>
+                                            </div>
+                                        </a>
+                                        <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body align-items-center">
+                                                <p class="mb-0 text-muted">Pellentesque tincidunt imperdiet metus
+                                                    interdum
+                                                    ligula tristique aenean facilisis congue congue libero interdum
+                                                    venenatis
+                                                    scelerisque sed massa elit pulvinar gravida.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end 3 -->
+
+                                    <!-- start 4 -->
+                                    <div class="card mt-4">
+                                        <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed"
+                                            aria-expanded="false" aria-controls="collapse4">
+                                            <div class="card-header p-4" id="heading4">
+                                                <h5 class="mb-0 text-dark">Manage catch one your coupens?</h5>
+                                            </div>
+                                        </a>
+                                        <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body align-items-center">
+                                                <p class="mb-0 text-muted">Vestibulum sodales turpis vestibulum praesent
+                                                    consectetur magna tortor interdum neque. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end 4 -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    <!-- start footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info mt-4">
+                            <!-- <img src="images/inner-image/logo-dark.png" alt="" height="22"> -->
+                            <a class="logo f-30 text-dark fw-bold" href="index.html">
+                                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+                            </a>
+                            <p class="f-18 mt-2 text-muted">
+                                Business opportunities Are Like <br>
+                                Buses, There's Always Another <br>
+                                One Coming...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Policies</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="">Security & Provciy</a></li>
+                                        <li><a href="">Marketplace</a></li>
+                                        <li><a href="">Term & Condition</a></li>
+                                        <li><a href="">Collection</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Company</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="activity.html">Pages</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="mt-4 pl-0 pl-lg-4">
+                            <h5 class="f-18 fw-bold">Follow Us</h5>
+                            <ul class="list-inline social-icons-list pt-3">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="my-4 text-muted">©
+                            <script>document.write(new Date().getFullYear())</script> Artlink. Design with <i
+                                class="mdi mdi-heart text-danger"></i> by <a href="https://themesdesign.in/"
+                                target="_blank" class="text-reset">Themsdesign</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- counter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

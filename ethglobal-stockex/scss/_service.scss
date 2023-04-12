@@ -1,0 +1,44 @@
+// 
+// service.scss
+// 
+
+.service {
+    .service-box {
+        .avatar-sm {
+            text-align: center;
+            line-height: 3rem;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+// 
+// cta
+// 
+
+
+.cta {
+    .cta-box {
+        border-radius: 10px;
+
+        h1 {
+            color: $dark !important;
+        }
+    }
+}
+
+
+
+body[data-layout-mode='dark'] {
+    .service {
+        background-color: $body-dark-bg-light !important;
+        .content{
+            h6{
+                color: $white !important;
+            }
+        }
+    }
+
+}

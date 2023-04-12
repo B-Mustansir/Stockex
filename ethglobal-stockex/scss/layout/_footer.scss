@@ -1,0 +1,40 @@
+.footer {
+    // border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: $dark;
+    padding   : 27px 0px;
+
+    // &.dashboard {
+    //     background  : #f9f9f9;
+    //     margin-left : 75px;
+    //     border-color: $border-color;
+    // }
+
+    .copyright {
+        position  : relative;
+        text-align: left;
+
+        p {
+            margin   : 0;
+            font-size: 14px;
+            color    : $body-color;
+
+            a {
+                color      : $white;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .footer-social {
+        text-align: right;
+
+        li {
+            display: inline-block;
+
+            a {
+                color  : rgba(255, 255, 255, 0.8);
+                padding: 0px 10px;
+            }
+        }
+    }
+}

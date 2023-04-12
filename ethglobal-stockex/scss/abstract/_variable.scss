@@ -1,0 +1,53 @@
+// stylelint-disable-next-line scss/dollar-variable-default
+$primary   : #2083fe;
+$secondary : #EFF2F7 !default;
+$success   : #36B37E !default;
+$info      : #00B8D9 !default;
+$warning   : #FFAB00 !default;
+$danger    : #FF5630 !default;
+$light     : #F6F9FC !default;
+$dark      : #1E2E50;
+$purple    :#6672e8;
+
+// Body
+$body-bg    : #fff;
+$body-color :#7184ad;
+
+
+
+
+// Typography
+$font-family-base : 'Spartan',
+sans-serif;
+$headings-font-weight   : 600;
+$font-size-base         : 1rem !default;
+$font-weight-base       : 400 !default;
+// $line-height-base    : 1.6;
+$headings-line-height   : 1.6;
+$h1-font-size           : 2.25rem;
+$h2-font-size           : 1.875rem;
+$h3-font-size           : 1.5rem;
+$h4-font-size           : 1.125rem;
+$h5-font-size           : 1rem;
+$h6-font-size           : 1rem;
+
+
+
+
+$text-muted: #7184ad;
+
+$heading-primary-size : 1.8rem;
+$sub-heading-size     : 1.6rem !default;
+$grid-gutter-width    : 30px;
+$dropdown-lik-color   : $body-color;
+$border-color         : #EFF2F7;
+$headings-color       :#1f2c73 !default;
+$table-striped-bg     : $body-bg;
+$border-radius        : 4px !default;
+$input-btn-focus-width: 0rem !default;
+
+// custom
+$radius   :$border-radius;
+$shadow   : 0px 1.25rem 1.5625rem rgba(22, 28, 45, 0.05);
+$shadow-sm: 0 .125rem .25rem rgba(35, 38, 45, .09);
+$shadow-lg: 0 1rem 3rem rgba(35, 38, 45, .275);

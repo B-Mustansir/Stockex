@@ -1,0 +1,100 @@
+// 
+// artical.scss
+// 
+
+.artical{
+
+    .artical-box{
+        background-color: $white;
+        padding: 25px;
+        border-radius: 20px;
+
+        .artical-image{
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .comment-box{
+        .Comment-box-item{
+            background-color: rgba($purple, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            .comment-item{
+            
+                .message-box{
+                    background-color: $white;
+                    padding: 20px;
+                    border-radius: 0 20px 20px 20px;
+                }
+            }
+        }  
+    }
+
+    .blog-side-box{
+        .items{
+            background-color: $white;
+            padding: 20px;
+            border-radius: 20px;
+
+            .title-bottom-border{
+                position: relative;
+                &::after{
+                    content:"" ;
+                    position: absolute;
+                    height: 1px;
+                    width: 20%;
+                    background-color: $black;
+                    top: -1px;
+                }
+            }
+            .avatar-sm{
+                line-height: 2rem;
+                border-radius: 10px;
+            }
+
+            .tag-box{
+                .badge{
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    background-color: rgba($purple, 0.3);
+                    color: $dark;
+                    padding: 8px 12px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+body[data-layout-mode="dark"] {
+    .artical{
+        background-color: $body-dark-bg !important;
+        .blog-side-box{
+            .items{
+                background-color: $gray-dark-100 !important;
+                ::placeholder{
+                    color: rgba($white, 0.4);
+                }
+            }
+
+            .title-bottom-border{
+                position: relative;
+                &::after{
+                    background-color: $muted !important;
+                    width: 30%;
+                }
+            }
+        }
+
+        .artical-box{
+            background-color: $gray-dark-100 !important;
+        }
+        .message-box{
+            background-color: $gray-dark-100 !important;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+// 
+// features.scss
+// 
+
+
+.features {
+    font-family: $font-family-base;
+    position: relative;
+    display: flex;
+    align-items: center;
+    // padding: 200px 0;
+    // background-color: $white;
+
+    .features-image {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    .price-box {
+        height: 40px;
+        width: 40px;
+        background-color: $primary;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50px;
+        color: $white;
+    }
+
+    .swiper-slide {
+        .bid-box {
+            border: 1px solid rgba($muted, 0.3) !important;
+            padding: 25px;
+            border-radius: 20px;
+        }
+    }
+}
+
+.features-slider {
+    .swiper-button-next {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        left: 15%;
+        top: 58px;
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border: 2px solid rgba($muted, 0.5);
+        background-image: url(../images/right-arrows.png);
+    }
+
+    .swiper-button-prev {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        left: 0%;
+        top: 40px;
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border: 2px solid rgba($muted, 0.5);
+        background-image: url(../images/left-arrow.png);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        transition: all 0.5s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 2px solid $muted;
+        }
+    }
+
+}
+
+.text-gradiant {
+    background-image: -webkit-linear-gradient(left, $blue, $blue, $warning, $pink, $danger);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+body[data-layout-mode='dark'] {
+
+    background-color: $body-dark-bg !important;
+
+}

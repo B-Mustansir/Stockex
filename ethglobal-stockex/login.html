@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSI DEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/faviconM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body>
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+    <!-- start section -->
+    <section class="login section position-relative overflow-hidden"
+        style="background-image: url(./images/inner-image/login.png); background-repeat: no-repeat;">
+        <!-- start container -->
+        <!-- <div class="bg-overlay"></div> -->
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="mt-2 inner-heading">                           
+                        <h1 class="fw-bold">Welcome 🖐 To Artlink</h1>
+
+                        <p class="text-muted">Don't have an account yet? <a href="register.html"
+                                class="text-blue">Register</a> </p>
+
+                        <div class="info-box">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="email  mt-4">
+                                        <label for="validationDefault03" class="form-label fw-semibold"> Email Address
+                                            :</label>
+                                        <input type="email" class="form-control" id="validationDefault03"
+                                            placeholder="Enter Your Email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="password  mt-4">
+                                        <label for="validationDefault01" class="form-label fw-semibold">Password
+                                            :</label>
+                                        <input type="password" class="form-control" id="validationDefault01"
+                                            placeholder="Daniels" value="" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 ">
+                                    <div class="d-flex align-items-center mt-4">
+                                        <div class="verify">
+                                            <button type="button" class="btn border btn-light text-dark shadow-sm"
+                                                id="liveToastBtn">Click to verify</button>
+                                        </div>
+                                        <div class="other ms-auto">
+                                            <div class="mb-0 text-muted fw-semibold">Log With : <a href=""
+                                                    class="text-dark ms-2">Google</a> <a href=""
+                                                    class="text-dark ms-4">Facebook</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="submit-button mt-4">
+                                <button class="btn btn-primary w-100" type="submit">Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="position-fixed start-0 bottom-50 p-3" style="z-index: 999">
+                            <div id="liveToast" class="toast position-relative" role="alert" aria-live="assertive"
+                                aria-atomic="true">
+                                <div class="toast-header">
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="mdi mdi-check-circle text-success f-30"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-2">
+                                            <strong>Your Account Is Verify</strong>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toast-body">
+                                    Login to your account!
+                                </div>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/bootstrap-toasts.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+   
+</body>
+
+</html>

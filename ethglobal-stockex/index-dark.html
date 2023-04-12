@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSI DEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/faviconM.png">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71" data-layout-mode="dark">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+      <!--Navbar Start-->
+      <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo f-30 text-dark fw-bold" href="index.html">
+                <img src="images/csiDexLogo3.png" class="logo-dark" alt="" height="40">
+                <img src="images/csiDexLogo3.png" class="logo-light" alt="" height="40">
+            </a>
+            <div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto navbar-center">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="index.html"><i
+                                        class="mdi mdi-home-outline f-20 me-2 align-middle"></i>Home Page 1</a></li>
+                            <li><a class="dropdown-item" href="index-3.html"><i
+                                        class="mdi mdi-home-modern f-20 me-2 align-middle"></i>Home Page 2</a></li>
+                            <li><a class="dropdown-item" href="index-4.html"><i
+                                        class="mdi mdi-home-variant f-20 me-2 align-middle"></i>Home Page 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index-2.html" class="nav-link">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagedropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+
+                        <div class="dropdown-menu dropmenu-width dropdown-menu-center">
+                            <div class="row">
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="activity.html"><i
+                                                class="mdi mdi-chart-line f-20 me-2 align-middle"></i>Activity</a></li>
+
+                                    <li><a class="dropdown-item" href="item-details.html"><i
+                                                class="mdi mdi-image-filter-frames f-20 me-2 align-middle"></i>Item
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="post-detail.html"><i
+                                                class="mdi mdi-image-filter-center-focus-weak f-20 me-2 align-middle"></i>Post
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="newsletter.html"><i
+                                                class="mdi mdi-email-open-outline f-20 me-2 align-middle"></i>Newsletter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="creatore.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Creatore</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html"><i
+                                                class="mdi mdi-account-outline f-20 me-2 align-middle"></i>Login</a></li>
+
+                                    <li><a class="dropdown-item" href="register.html"><i
+                                                class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Register</a></li>
+
+                                    <li><a class="dropdown-item" href="privacy.html"><i
+                                                class="mdi mdi-lock-open-outline f-20 me-2 align-middle"></i>Privacy</a></li>
+
+                                </ul>
+
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="wallet.html"><i
+                                                class="mdi mdi-wallet-travel f-20 me-2 align-middle"></i>Connect Wallet</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="faq.html"><i
+                                                class="mdi mdi-comment-question-outline f-20 me-2 align-middle"></i>Faq</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="submit-request.html"><i
+                                                class="mdi mdi-check-circle-outline f-20 me-2 align-middle"></i>submit
+                                            Reqeust</a></li>
+
+                                    <li><a class="dropdown-item" href="chat.html"><i
+                                                class="mdi mdi-message-text-outline f-20 me-2 align-middle"></i>Chat</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="artical.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Artical</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="ranking.html"><i
+                                                class="mdi mdi-numeric-1-box-outline f-20 me-2 align-middle"></i>Ranking</a></li>
+
+                                    <li><a class="dropdown-item" href="404.html"><i
+                                                class="mdi mdi-alert-outline f-20 me-2 align-middle"></i>404</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!--end dropdown-->
+
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><i
+                                        class="mdi mdi-account-edit f-20 me-2 align-middle"></i>Edit profile</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <!--end dropdown-->
+                </ul>
+                <!--end navbar-nav-->
+
+                <a href="wallet.html" class="btn btn-primary">Connect to Wallet</a>
+            </div>
+
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- start home -->
+    <section class="home bg-image" id="home">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home-content home-heading">
+                        <h1 class="fw-bold display-5">Discover The Largest <span class="text-primary"> <br> NFT</span>
+                            Marketplace.</h1>
+                        <p class="text-muted my-4">A New Place To Collect And Connect NFT Across The World. It’s come
+                            with a creative design, home page options, different explore and digital asset pages and
+                            items.</p>
+                        <button class="btn btn-dark">Explore</button>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="32">0</h2><span
+                                        class="h2 fw-bold">K</span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">Smartwork</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="20">0</h2><span
+                                        class="h2 fw-bold">K</span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">Action</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="counter-box">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <h2 class="counter_value fw-bold" data-bs-target="10">0</h2><span
+                                        class="h2 fw-bold">K</span><span class="h2">+</span>
+                                </div>
+                                <p class="counter-caption">Market</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="client-slider" id="clients-slider">
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/img-1.png" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">Analysis</p>
+                                    <h5 class="fw-bold">3.4 ETH</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/img-2.png" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">Burn & Melting</p>
+                                    <h5 class="fw-bold">3.4 ETH</h5>
+
+                                    <div class="d-flex">
+                                        <div class="slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/img-3.png" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">Digital</p>
+                                    <h5 class="fw-bold ">3.4 ETH</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card position-relative overflow-hidden m-2 m-lg-0">
+                                <img src="images/slider/img-4.png" alt="logo-img" class="img-fluid">
+                                <div class="card-body slider-content position-relative">
+                                    <p class="mb-2">Biggest Collection</p>
+                                    <h5 class="fw-bold">3.4 ETH</h5>
+
+                                    <div class="d-flex">
+                                        <div class=" slider-content-image d-flex mt-3">
+                                            <div class="avatar-sm">
+                                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-sm top-child position-relative">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+
+                                                <span class="content-image-check">
+                                                    <span class="visually-visible"><i
+                                                            class="mdi mdi-check f-12"></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="slider-content-button">
+                                            <button class="btn btn-dark pe-5">Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                    <!-- End slider -->
+                </div>
+
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" rows="4" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-12">
+                            <label for="validationCustom002" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom002" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom005" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom005" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end Register modal -->
+
+
+
+    <!-- start home -->
+    <section class="features section pt-0" id="market">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h6 class="text-gradiant fw-bold">NFT Marketplace</h6>
+                        <h1 class="fw-bold">A New Place To Collect And Connect NFT Across.</h1>
+                        <div class="d-flex align-items-center mt-4">
+                            <button class="btn btn-primary">Explore Now</button>
+                            <button class="btn btn-outline-dark ms-4">Create Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="features-image">
+                        <img src="images/features.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-5  offset-lg-1">
+                    <div class="swiper-container features-slider pb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide mx-5 pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/img-1.jpg" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">Floshka</p>
+                                                <h6 class="fw-bold">Morvin MCkinny</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-checkbox-blank-outline"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Instant Price</p>
+                                                <h6 class="fw-bold">3.5 ETH</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Gelexy On Earth</h2>
+                                    <p class="text-muted">10 Editional Minted</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Bid</h6>
+                                    <h2 class="fw-bold">1.02<span class="f-16"> ETH</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">20</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">36</h3>
+                                            <p>Min</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Sec</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Place a Bid</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide mx-5  pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/img-2.jpg" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">Floshka</p>
+                                                <h6 class="fw-bold">Morvin MCkinny</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-checkbox-blank-outline"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Instant Price</p>
+                                                <h6 class="fw-bold">3.5 ETH</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Gelexy On Earth</h2>
+                                    <p class="text-muted">10 Editional Minted</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Bid</h6>
+                                    <h2 class="fw-bold">1.02<span class="f-16"> ETH</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">20</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">36</h3>
+                                            <p>Min</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Sec</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Place a Bid</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide mx-5  pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="d-flex ">
+                                        <div class="d-flex align-items-center text-start">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-sm">
+                                                    <img src="images/slider/user/img-3.jpg" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted">Floshka</p>
+                                                <h6 class="fw-bold">Morvin MCkinny</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar price-box">
+                                                    <i class="mdi mdi-checkbox-blank-outline"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p class="mb-0 text-muted f-14">Instant Price</p>
+                                                <h6 class="fw-bold">3.5 ETH</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title mt-5">
+                                    <h2 class="fw-bold">Gelexy On Earth</h2>
+                                    <p class="text-muted">10 Editional Minted</p>
+                                </div>
+
+                                <div class="bid-box text-center">
+                                    <h6>Starting Bid</h6>
+                                    <h2 class="fw-bold">1.02<span class="f-16"> ETH</span></h2>
+                                    <hr>
+                                    <!-- <h6 class="text-muted fw-bold">$4.542.18</h6> -->
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">20</h3>
+                                            <p>Hrs</p>
+                                        </div>
+                                        <div class="time mx-4">
+                                            <h3 class="mb-0 fw-bold">36</h3>
+                                            <p>Min</p>
+                                        </div>
+                                        <div class="time">
+                                            <h3 class="mb-0 fw-bold">08</h3>
+                                            <p>Sec</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-primary w-100">Place a Bid</button>
+                                    <button class="btn btn-outline-dark mt-2 w-100">Create Account</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- next / prev arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- !next / prev arrows -->
+                    </div>
+
+
+                    <!-- End slider -->
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+
+    <!-- start service -->
+    <section class="section service bg-light" id="collection">
+        <!-- start container -->
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-5">
+                    <h6 class="text-gradiant fw-bold">NFT Collection</h6>
+                    <h2 class="fw-bold">Collect And Connect NFT Marketplace.</h2>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dolorem
+                        saepe, nihil quo explicabo magni adipisci qui officia! Quas neque nobis libero id.</p>
+                    <div class="mt-4">
+                        <button class="btn btn-sm btn-outline-dark">Create Account <i
+                                class="mdi mdi-chevron-right f-18 align-middle"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col mt-4">
+                            <div class="service-box">
+                                <div class="avatar-sm bg-soft-primary mb-4">
+                                    <i class="mdi mdi-wallet f-20 text-primary"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-2 fw-bold">Digital Wallet</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="service-box mt-5">
+                                <div class="avatar-sm bg-soft-success mb-4">
+                                    <i class="mdi mdi-checkerboard f-20 text-success"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-2 fw-bold">Digital Wallet</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-4">
+                            <div class="service-box">
+                                <div class="avatar-sm bg-soft-blue mb-4">
+                                    <i class="mdi mdi-collage f-20 text-blue"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-2 fw-bold">Digital Wallet</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="service-box mt-5">
+                                <div class="avatar-sm bg-soft-warning mb-4">
+                                    <i class="mdi mdi-security f-20 text-warning"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="mb-2 fw-bold">Digital Wallet</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end service -->
+
+
+
+    <!-- start slider blog -->
+    <section class="slider-blog section">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-gradiant fw-bold">Tranding NFT</h6>
+                    <h2 class="fw-bold">Best Sellers</h2>
+                    <p class="text-muted">Best Sellers of the Month's NFT</p>
+                </div>
+            </div>
+
+            <div class="swiper-container pb-5 blog-slider">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide mt-5 mx-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img1.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Aninta John</p>
+                                            <a href="" class="text-muted mb-0">@LadyAni</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#1</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 py-4 py-lg-0">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img2.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <a href="" class="text-muted mb-0">@AL John</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#2</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img3.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <a href="" class="text-muted mb-0">@BangRang</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#3</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img4.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Aninta John</p>
+                                            <a href="" class="text-muted mb-0">@Creator</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#4</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 py-4 py-lg-0">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img5.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <a href="" class="text-muted mb-0">@AL John</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#5</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/blog/img6.png" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <a href="" class="text-muted mb-0">@BangRang</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#6</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/img-2.jpg" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <p class="text-muted mb-0">@AL John</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs border plus-icon ms-auto">
+                                        <i class="mdi mdi-check f-20 text-dark"></i>
+                                        <p class="text-dark mt-2">#2</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/img-1.jpg" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Albert Jonathan</p>
+                                            <p class="text-muted mb-0">@BangRang</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-box d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="avatar-lg">
+                                                <img src="images/slider/user/img-3.jpg" alt=""
+                                                    class="img-fluid rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h6 class="mb-0 fw-bold">2.6 <span class="">ETH</span> </h6>
+                                            <p class="mb-0">Aninta John</p>
+                                            <p class="text-muted mb-0">@LadyAni</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="avatar-xs bg-blue plus-icon ms-auto">
+                                        <i class="mdi mdi-plus f-20"></i>
+                                        <p class="text-dark mt-2">#1</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- next / prev arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- !next / prev arrows -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end slider blog -->
+
+
+
+
+
+    <!-- start blog -->
+    <section class="blog section bg-light">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="title-content text-center text-md-start">
+                        <h2 class="fw-bold">Descover Find Best NFT</h2>
+                        <p class="text-muted">Start an Extraodinary Era of Digital Art and Music</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="text-md-end text-center">
+                        <button class="btn btn-primary ">Discover All <i class="mdi mdi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">2.84 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child position-relative">
+                                        <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child position-relative">
+                                        <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">241 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">1.32 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">142 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.25 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">0.95 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child position-relative">
+                                        <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">58 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">2.84 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">3 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-5.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">1.34 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child position-relative">
+                                        <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">241 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-6.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">0.47 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">142 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.25 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0 f-14">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-7.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">0.95 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">58 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0">
+                        <div class="blog-image">
+                            <img src="images/blog/img-8.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <h6 class="fw-bold mb-0">Community On Tour</h6>
+                                <p class="text-success ms-auto fw-bold mb-0">1.50 ETH</p>
+                            </div>
+                            <p class="text-muted">@imogee</p>
+                            <div class="d-flex align-items-baseline">
+                                <div class="slider-content-image d-flex">
+                                    <div class="avatar-sm">
+                                        <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child">
+                                        <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="avatar-sm top-child position-relative">
+                                        <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="blog-profile-content ms-auto">
+                                    <span class="align-middle fw-bold text-muted">12 Editional</span>
+                                </div>
+                            </div>
+                            <div class="blog-footer mt-4">
+                                <div class="bid-content d-flex">
+                                    <h6 class="mb-0">Min Bid : <span class="fw-bold"> 0.48 ETH</span></h6>
+                                    <h6 class="ms-auto mb-0">New Bid <img src="images/blog/danger.png" alt=""
+                                            class="img-fluid"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+
+    <!-- start testi -->
+    <section class="testimonial section">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-gradiant fw-bold">Members</h6>
+                    <h2 class="fw-bold">Hot Collections</h2>
+                    <p class="text-muted">You Can Follow Many Creater</p>
+                </div>
+            </div>
+
+            <div class="testi-slider" id="testi-slider">
+                <div class="item ">
+                    <div class="testi-box p-4 position-relative">
+                        <div class="tab-image">
+                            <img src="images/testi/t-1.png" alt="" class="img-fluid">
+                            <div class="avatar-xl">
+                                <img src="images/slider/user/img-1.jpg" alt=""
+                                    class="img-fluid rounded-circle border border-3 border-white">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <h5 class="fw-bold">Greg Thompson</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet adipisicing elit. Assumenda in repudiandae
+                                .</p>
+                            <button class="btn btn-sm btn-primary"><i class="mdi mdi-plus f-16 align-middle"></i>
+                                Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider item -->
+
+                <div class="item">
+                    <div class="testi-box p-4 position-relative">
+                        <div class="tab-image">
+                            <img src="images/testi/t-2.png" alt="" class="img-fluid">
+                            <div class="avatar-xl">
+                                <img src="images/slider/user/img-2.jpg" alt=""
+                                    class="img-fluid rounded-circle border border-3 border-white">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <h5 class="fw-bold">Freank Fabel</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet adipisicing elit. Assumenda in repudiandae
+                                .</p>
+                            <button class="btn btn-sm btn-primary"><i class="mdi mdi-plus f-16 align-middle"></i>
+                                Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider item -->
+                <div class="item ">
+                    <div class="testi-box p-4 position-relative">
+                        <div class="tab-image">
+                            <img src="images/testi/t-3.png" alt="" class="img-fluid">
+                            <div class="avatar-xl">
+                                <img src="images/slider/user/img-3.jpg" alt=""
+                                    class="img-fluid rounded-circle border border-3 border-white">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <h5 class="fw-bold">Sally Fadel</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet adipisicing elit. Assumenda in repudiandae
+                                .</p>
+                            <button class="btn btn-sm btn-primary"><i class="mdi mdi-plus f-16 align-middle"></i>
+                                Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider item -->
+                <div class="item ">
+                    <div class="testi-box p-4 position-relative">
+                        <div class="tab-image">
+                            <img src="images/testi/t-2.png" alt="" class="img-fluid">
+                            <div class="avatar-xl">
+                                <img src="images/slider/user/img-4.jpg" alt=""
+                                    class="img-fluid rounded-circle border border-3 border-white">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <h5 class="fw-bold">Suzzy Azzem</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet adipisicing elit. Assumenda in repudiandae
+                                .</p>
+                            <button class="btn btn-sm btn-primary"><i class="mdi mdi-plus f-16 align-middle"></i>
+                                Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider item -->
+            </div>
+            <!-- End slider -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end testi -->
+
+
+
+   <!-- start footer -->
+   <section class="footer">
+    <div class="container">
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info mt-4">
+                        <!-- <img src="images/inner-image/logo-dark.png" alt="" height="22"> -->
+                       <a class="logo f-30 text-dark fw-bold" href="index.html">
+                                <img src="images/csiDexLogo3.png" class="logo-dark" alt="" height="40">
+                                <img src="images/csiDexLogo3.png" class="logo-light" alt="" height="40">
+                            </a>
+                        <p class="f-18 mt-2 text-muted">
+                            Trading opportunities Are Like <br>
+                            Buses, There's Always Another <br>
+                            One Coming...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="mt-4">
+                                <h5 class="f-18 fw-bold">Policies</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="">Security & Provciy</a></li>
+                                    <li><a href="">Marketplace</a></li>
+                                    <li><a href="">Term & Condition</a></li>
+                                    <li><a href="">Collection</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="mt-4">
+                                <h5 class="f-18 fw-bold">Company</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="activity.html">Pages</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="mt-4 pl-0 pl-lg-4">
+                        <h5 class="f-18 fw-bold">Follow Us</h5>
+                        <ul class="list-inline social-icons-list pt-3">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end footer -->
+
+
+
+
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- counter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+
+    <script>
+        var slider = tns({
+            container: '.client-slider',
+            loop: true,
+            autoplay: true,
+            mouseDrag: true,
+            controls: false,
+            navPosition: "bottom",
+            nav: true,
+            autoplayTimeout: 4000,
+            speed: 900,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            controlsText: ['&#8592;', '&#8594;'],
+            autoplayButtonOutput: false,
+            gutter: 30,
+            responsive: {
+
+                992: {
+                    gutter: 30,
+                    items: 1.5
+                },
+
+            }
+        });
+
+    </script>
+
+    <script>
+        new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 20,
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            paginationClickable: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 1500,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+    </script>
+
+
+    <script>
+        var slider = tns({
+            container: '.testi-slider',
+            loop: true,
+            autoplay: true,
+            mouseDrag: true,
+            controls: true,
+            navPosition: "bottom",
+            nav: false,
+            autoplayTimeout: 4000,
+            speed: 900,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            controlsText: ['&#8592;', '&#8594;'],
+            autoplayButtonOutput: false,
+            gutter: 30,
+            responsive: {
+
+                992: {
+                    gutter: 30,
+                    items: 3
+                },
+
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>

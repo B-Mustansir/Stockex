@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSI DEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Pichforest" name="author" />
+
+    <link rel="shortcut icon" href="images/faviconM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+    <!-- Default Theme: Dark -->
+    <script>window.onload = function() {document.body.setAttribute("data-layout-mode", "dark"); localStorage.setItem("theme", "dark");}</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71" data-layout-mode="dark">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+     <!--Navbar Start-->
+     <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo f-30 text-dark fw-bold" href="index.html">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+            </a>
+            <div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto navbar-center">
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="index.html"><i
+                                        class="mdi mdi-home-outline f-20 me-2 align-middle"></i>Home Page 1</a></li>
+                            <li><a class="dropdown-item" href="index-3.html"><i
+                                        class="mdi mdi-home-modern f-20 me-2 align-middle"></i>Home Page 2</a></li>
+                            <li><a class="dropdown-item" href="index-4.html"><i
+                                        class="mdi mdi-home-variant f-20 me-2 align-middle"></i>Home Page 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index-2.html" class="nav-link">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagedropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+
+                        <div class="dropdown-menu dropmenu-width dropdown-menu-center">
+                            <div class="row">
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="activity.html"><i
+                                                class="mdi mdi-chart-line f-20 me-2 align-middle"></i>Activity</a></li>
+
+                                    <li><a class="dropdown-item" href="item-details.html"><i
+                                                class="mdi mdi-image-filter-frames f-20 me-2 align-middle"></i>Item
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="post-detail.html"><i
+                                                class="mdi mdi-image-filter-center-focus-weak f-20 me-2 align-middle"></i>Post
+                                            Details</a></li>
+                                    <li><a class="dropdown-item" href="newsletter.html"><i
+                                                class="mdi mdi-email-open-outline f-20 me-2 align-middle"></i>Newsletter</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="creatore.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Creatore</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html"><i
+                                                class="mdi mdi-account-outline f-20 me-2 align-middle"></i>Login</a></li>
+
+                                    <li><a class="dropdown-item" href="register.html"><i
+                                                class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Register</a></li>
+
+                                    <li><a class="dropdown-item" href="privacy.html"><i
+                                                class="mdi mdi-lock-open-outline f-20 me-2 align-middle"></i>Privacy</a></li>
+
+                                </ul>
+
+                                <ul class="col-lg-6 list-unstyled">
+                                    <li><a class="dropdown-item" href="wallet.html"><i
+                                                class="mdi mdi-wallet-travel f-20 me-2 align-middle"></i>Connect Wallet</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="faq.html"><i
+                                                class="mdi mdi-comment-question-outline f-20 me-2 align-middle"></i>Faq</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="submit-request.html"><i
+                                                class="mdi mdi-check-circle-outline f-20 me-2 align-middle"></i>submit
+                                            Reqeust</a></li>
+
+                                    <li><a class="dropdown-item" href="chat.html"><i
+                                                class="mdi mdi-message-text-outline f-20 me-2 align-middle"></i>Chat</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="artical.html"><i
+                                                class="mdi mdi-comment-account-outline f-20 me-2 align-middle"></i>Artical</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="ranking.html"><i
+                                                class="mdi mdi-numeric-1-box-outline f-20 me-2 align-middle"></i>Ranking</a></li>
+
+                                    <li><a class="dropdown-item" href="404.html"><i
+                                                class="mdi mdi-alert-outline f-20 me-2 align-middle"></i>404</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!--end dropdown-->
+
+
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="homedrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="homedrop">
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="mdi mdi-account-box-outline f-20 me-2 align-middle"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="edit-profile.html"><i
+                                        class="mdi mdi-account-edit f-20 me-2 align-middle"></i>Edit profile</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <!--end dropdown-->
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <!--end dropdown-->
+                </ul>
+                <!--end navbar-nav-->
+
+                <a href="wallet.html" class="btn btn-primary">Connect to Wallet</a>
+
+            </div>
+
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- start home -->
+    <section class="home-4 section overflow-hidden" id="explore">
+        <!-- start container -->
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 ">
+                    <div class="text-center pb-5 home-heading">
+                        <h6 class="fw-semibold text-muted">Discover digital art and collect NFTs</h6>
+                        <h2 class="fw-bold">Our Best Template for NFT Marketplace</h2>
+                        <p class=" text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt
+                            expedita dolor <br> illum illo cumque. Repudiandae harum doloribus reiciendis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="border-horizontal"></div>
+                    <div class="home-image-gallery ">
+                        <div class="row">
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-6.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-7.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-8.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-0 mb-lg-4">
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-6.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ">
+                                <div class="mt-4">
+                                    <img src="images/blog-3/img-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6 my-4 my-lg-0">
+                            <div class="art-image p-lg-4">
+                                <img src="images/img1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="body-content">
+                                <div class="d-flex">
+                                    <div class="title">
+                                        <h4 class="fw-bold text-uppercase">Own Collection</h4>
+                                    </div>
+                                    <div class="icon d-flex ms-auto">
+                                        <div class="like">
+                                            <a href=""><i class="mdi mdi-heart"></i></a>
+                                        </div>
+                                        <div class="menu ms-3">
+                                            <div class="dropdown">
+                                                <a href="" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false"><i class="mdi mdi-dots-vertical">
+                                                    </i></a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <div class="small-title mb-3">
+                                        <p class="f-14 fw-semibold">0.24 ETH <span class="text-muted ms-2">$246.13 1 of
+                                                1</span></p>
+                                    </div>
+                                    <div class="info-list">
+                                        <p class="f-14 text-muted fw-semibold mb-0">Artist : <span>mickel_fenn</span>
+                                        </p>
+                                        <p class="f-14 text-muted fw-semibold mb-0">Size : <span>3000 × 3000</span></p>
+                                        <p class="f-14 text-muted fw-semibold">Created : <span>02 April, 2021</span></p>
+                                    </div>
+                                    <div class="profile mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="avatar-md">
+                                                    <img src="images/slider/user/img-1.jpg" alt=""
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6 class="f-14 text-muted mb-0">Owner</h6>
+                                                <p class="f-14 mb-0 fw-semibold">jimmy_dom </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="high-bid p-4 mt-4">
+                                        <h6>Highest Bid:</h6>
+                                        <div class="d-flex">
+                                            <div class="avatar-xs bg-primary rounded-circle text-center text-white">M
+                                            </div>
+                                            <div class="text ms-auto">
+                                                <p class="mb-0 f-14 fw-semibold">2.51 ETH $314.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <button class="btn btn-primary rounded-pill">Buy now</button>
+                                        <div class="ms-2">
+                                            <button class="btn btn-outline-primary rounded-pill">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+
+
+    <!-- start slider-blog -->
+    <section class=" blog-slider slider4 section bg-light" id="collections">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Most Expencive Collections</h2>
+                    <p class="text-muted">Laboriosam laborum veniam quidem vitae impedit, provident eaque dignissimos
+                        deserunt consequuntur cupiditate enim doloremque,.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client-slider position-relative mt-5">
+                        <div class="item">
+                            <div class="card">
+                                <div class="blog-slider-image position-relative">
+                                    <img src="images/slider-blog-2/img-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="fw-bold">Colorful Abstract Painting</h5>
+
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <div class=" slider-content-image d-flex ">
+                                            <div class="avatar-xs">
+                                                <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child">
+                                                <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child position-relative">
+                                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="image-side-content">
+                                            <h6 class="mb-0 ms-2 text-muted">@danil_pannini..</h6>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p class="text-success mb-0 fw-semibold">0.11100 ETH</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+
+                                    <div class="blog-slider-footer">
+                                        <h6 class="f-14"><i
+                                                class="mdi mdi-crown f-18 text-primary me-2 align-middle"></i>Highest
+                                            Bid <span class="text-muted ms-2">0.01111.00 ETH</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="blog-slider-image position-relative">
+                                    <img src="images/slider-blog-2/img-2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="fw-bold">
+                                        Synthwave Modern Painting</h5>
+
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <div class=" slider-content-image d-flex ">
+                                            <div class="avatar-xs">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child">
+                                                <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                        </div>
+                                        <div class="image-side-content">
+                                            <h6 class="mb-0 ms-2 text-muted">@danil_pannini..</h6>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p class="text-success mb-0 fw-semibold">0.11100 ETH</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+
+                                    <div class="blog-slider-footer">
+                                        <h6 class="f-14"><i
+                                                class="mdi mdi-crown f-18 text-primary me-2 align-middle"></i>Highest
+                                            Bid <span class="text-muted ms-2">0.01111.00 ETH</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="blog-slider-image position-relative">
+                                    <img src="images/slider-blog-2/img-3.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="fw-bold">Synthwave Painting</h5>
+
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <div class=" slider-content-image d-flex ">
+                                            <div class="avatar-xs">
+                                                <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="image-side-content">
+                                            <h6 class="mb-0 ms-2 text-muted">@danil_pannini..</h6>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p class="text-success mb-0 fw-semibold">0.11100 ETH</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+
+                                    <div class="blog-slider-footer">
+                                        <h6 class="f-14"><i
+                                                class="mdi mdi-crown f-18 text-primary me-2 align-middle"></i>Highest
+                                            Bid <span class="text-muted ms-2">0.01111.00 ETH</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="blog-slider-image position-relative">
+                                    <img src="images/slider-blog-2/img-4.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="fw-bold">Colorful Abstract Painting</h5>
+
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <div class=" slider-content-image d-flex ">
+                                            <div class="avatar-xs">
+                                                <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child">
+                                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="image-side-content">
+                                            <h6 class="mb-0 ms-2 text-muted">@danil_pannini..</h6>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p class="text-success mb-0 fw-semibold">0.11100 ETH</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+
+                                    <div class="blog-slider-footer">
+                                        <h6 class="f-14"><i
+                                                class="mdi mdi-crown f-18 text-primary me-2 align-middle"></i>Highest
+                                            Bid <span class="text-muted ms-2">0.01111.00 ETH</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="blog-slider-image position-relative">
+                                    <img src="images/slider-blog-2/img-5.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="fw-bold">Spider Eyes Modern Art</h5>
+
+                                    <div class="d-flex align-items-center justify-content-start mt-3">
+                                        <div class=" slider-content-image d-flex ">
+                                            <div class="avatar-xs">
+                                                <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child">
+                                                <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child position-relative">
+                                                <img src="images/slider/user/img-7.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="avatar-xs top-child position-relative">
+                                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="image-side-content">
+                                            <h6 class="mb-0 ms-2 text-muted">@danil_pannini..</h6>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <p class="text-success mb-0 fw-semibold">0.11100 ETH</p>
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+
+                                    <div class="blog-slider-footer">
+                                        <h6 class="f-14"><i
+                                                class="mdi mdi-crown f-18 text-primary me-2 align-middle"></i>Highest
+                                            Bid <span class="text-muted ms-2">0.01111.00 ETH</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                    <!-- End slider -->
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end slider-blog -->
+
+
+
+    <!-- start seller -->
+    <section class="top-seller section" id="sellers" style="background-image: url(./images/cta-3.png);">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Top Sellers In Week</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugit
+                        architecto sed voluptatibus nobis corporis.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-start text-lg-end">
+                        <button class="btn btn-primary rounded-pill ">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="seller-box">
+                            <div class="seller position-relative">
+                                <div class="number text-center rounded-circle">
+                                    <h6 class="text-white f-12">01</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 ms-3">
+                                        <div class="avatar-md rounded-circle">
+                                            <img src="images/slider/user/img-4.jpg" alt="..."
+                                                class="img-fluid rounded-circle  box-shadow-lg">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                        <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seller position-relative my-5">
+                                <div class="number text-center rounded-circle">
+                                    <h6 class="text-white f-12">02</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 ms-3">
+                                        <div class="avatar-md rounded-circle">
+                                            <img src="images/slider/user/img-5.jpg" alt="..."
+                                                class="img-fluid rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h5 class="mb-0 f-15">kristian_fel</h5>
+                                        <p class="mb-0 f-14 fw-semibold text-muted">4.35 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seller position-relative">
+                                <div class="number text-center rounded-circle">
+                                    <h6 class="text-white f-12">03</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 ms-3">
+                                        <div class="avatar-md rounded-circle">
+                                            <img src="images/slider/user/img-6.jpg" alt="..."
+                                                class="img-fluid rounded-circle">
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h5 class="mb-0 f-15">mickel_fenn</h5>
+                                        <p class="mb-0 f-14 fw-semibold text-muted">4.19 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="seller-box mt-4 mt-lg-0">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="seller position-relative">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">04</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-1.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-2 position-relative my-5">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">05</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-2.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">kristian_fel</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.35 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-3 position-relative">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">06</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-3.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">mickel_fenn</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.19 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="seller-1 position-relative mt-5 mt-lg-0">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">07</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-4.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-1 position-relative my-5">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">08</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-5.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-1 position-relative">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">09</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-6.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="seller-1 position-relative mt-5 mt-lg-0">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">10</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-7.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-1 position-relative my-5">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">11</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-8.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seller-1 position-relative">
+                                        <div class="number text-center rounded-circle">
+                                            <h6 class="text-white f-12">12</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 ms-3">
+                                                <div class="avatar-md rounded-circle">
+                                                    <img src="images/slider/user/img-2.jpg" alt="..."
+                                                        class="img-fluid rounded-circle">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-2">
+                                                <h5 class="mb-0 f-15">Austin_rivera</h5>
+                                                <p class="mb-0 f-14 fw-semibold text-muted">4.52 ETH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end seller -->
+
+
+    <!-- start cta -->
+    <section class="section cta-3 bg-light" id="auctions">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="images/cta-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <h1 class="fw-bold display-5">Discover Digital Art And Collect NFTs</h1>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam <br>
+                        dolore esse ea officia quam facere quisquam. consectetur adipisicing elit. Distinctio fugit
+                        architecto sed voluptatibus nobis corporis.</p>
+                    <button class="btn btn-primary rounded-pill mt-4">Read more</button>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end cta -->
+
+
+
+    <!-- start blog -->
+    <section class="section blog-4">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Live Auctions</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugit
+                        architecto sed voluptatibus nobis corporis.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-start text-lg-end">
+                        <button class="btn btn-primary rounded-pill ">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@Deniva_Pannini</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-1.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 2.53K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">Robotic Body Art</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">6 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">1.53
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-2.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@Keven_Chrisi</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-2.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 1.03K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">Liguid Wave</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">8 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.15
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-3.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@David_Alex</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-3.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 2.23K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">Maccky Alex</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">3 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">1.20
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-4.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@Steva_Robart</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-4.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 0.86K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">The Chirstoper</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">2 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.27
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-5.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@jimmy_dom</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-5.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 1.18K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">The Chirstoper</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">2 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.30
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-6.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@mickel_fenn</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-6.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 2.38K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">The Chirstoper</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">2 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.30
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-start">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-1.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">
+                                @kristian_fel</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-7.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 0.93K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">The Chirstoper</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">2 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.30
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <div class="tab-content p-4 border-0">
+                        <div class="header d-flex align-items-center justify-content-center">
+                            <div class="avatar-xs">
+                                <img src="images/slider/user/img-8.jpg" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">@Deniv_Pannini</h6>
+                        </div>
+                        <div class="card-image mt-2 position-relative">
+                            <img src="images/explore/img-8.png" alt="" class="img-fluid">
+                            <div class="position-absolute top-0 end-0 me-3 mt-3">
+                                <span class="badge rounded-pill bg-white text-dark">
+                                    <i class="mdi mdi-heart text-danger align-middle f-16"></i> 1.45K
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body-content mt-3">
+                            <h6 class="fw-bold">The Chirstoper</h6>
+                            <div class="d-flex">
+                                <p class="text-muted">2 in stock</p>
+                                <p class="ms-auto text-muted">Price : <span class="text-success">2.30
+                                        ETH</span></p>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="history f-15">
+                                    <i class="mdi mdi-restart align-middle f-18"></i>View History
+                                </div>
+                                <div class="bid-button ms-auto">
+                                    <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <button class="btn btn-white text-dark shadow rounded-pill"><i
+                                    class="mdi mdi-restart f-18 align-middle"></i> View All Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+
+     <!-- start footer -->
+     <section class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info mt-4">
+                            <!-- <img src="images/inner-image/logo-dark.png" alt="" height="22"> -->
+                            <a class="logo f-30 text-dark fw-bold" href="index.html">
+                                <img src="images/logo-dark.png" class="logo-dark" alt="" height="40">
+                                <img src="images/logo-light.png" class="logo-light" alt="" height="40">
+                            </a>
+                            <p class="f-18 mt-2 text-muted">
+                                Business opportunities Are Like <br>
+                                Buses, There's Always Another <br>
+                                One Coming...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Policies</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="">Security & Provciy</a></li>
+                                        <li><a href="">Marketplace</a></li>
+                                        <li><a href="">Term & Condition</a></li>
+                                        <li><a href="">Collection</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="mt-4">
+                                    <h5 class="f-18 fw-bold">Company</h5>
+                                    <ul class="list-unstyled footer-link mt-3">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="activity.html">Pages</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="mt-4 pl-0 pl-lg-4">
+                            <h5 class="f-18 fw-bold">Follow Us</h5>
+                            <ul class="list-inline social-icons-list pt-3">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="my-4 text-muted">©
+                            <script>document.write(new Date().getFullYear())</script> Artlink. Design with <i
+                                class="mdi mdi-heart text-danger"></i> by <a href="https://themesdesign.in/"
+                                target="_blank" class="text-reset">Themsdesign</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+
+
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="js/tiny-slider.js"></script>
+
+    <!-- counter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+    <script>
+        var slider = tns({
+            container: '.client-slider',
+            loop: true,
+            autoplay: true,
+            mouseDrag: true,
+            navPosition: "bottom",
+            nav: false,
+            controls: false,
+            autoplayTimeout: 4000,
+            speed: 900,
+            gutter: 40,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            controlsText: ['&#8592;', '&#8594;'],
+            autoplayButtonOutput: false,
+            responsive: {
+
+                992: {
+                    gutter: 40,
+                    items: 3
+                },
+
+                576: {
+                    controls: true,
+                }
+
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
