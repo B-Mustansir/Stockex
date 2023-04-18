@@ -8378,11 +8378,10 @@
                 <h4 class="card-title">Buy</h4>
               </div>
               <div class="card-body">
-                <form name="myform" class="currency_validate">
                   <label class="form-label">Buy TCS Token</label>
                   <div class="input-group">
                     <input type="text" name="currency_amount" class="form-control" placeholder="5 Tokens"
-                      id="buyTokenAmount" />
+                      id="buyTokenAmount"/>
                     <select class="form-control" name="method">
                       <option value="bank">TCS</option>
                       <option value="master">INFY</option>
@@ -8390,7 +8389,7 @@
                     </select>
                   </div>
 
-                  <button type="submit" name="submit" class="btn btn-success btn-block mt-4" onclick="buyTokens();">
+                  <button class="btn btn-success btn-block mt-4" onclick="buyTokens();">
                     Buy Now
                   </button>
                 </form>
@@ -8416,7 +8415,6 @@
                   <button type="submit" name="submit" class="btn btn-success btn-block mt-4">
                     Sell Now
                   </button>
-                </form>
               </div>
             </div>
           </div>
@@ -8559,7 +8557,8 @@
       </div>
     </div> -->
 
-    <script src="js/connect.js"></script>
+  <script src="js/connect.js"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
 
   <script src="./vendor/jquery/jquery.min.js"></script>
   <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
